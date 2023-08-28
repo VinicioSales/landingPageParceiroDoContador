@@ -1,0 +1,23 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    padding: 0 27px;  /* Para a logo ter uma margem de 27px no lado esquerdo */
+}
+
+.logo img {
+    /* Adicione estilos para a imagem do logo, se necessário */
+}
+
+.nav-left {
+    display: flex;
+    gap: 29px;  /* Distância entre os itens do menu */
+    margin-left: 62px;  /* Distância entre a logo e o menu à esquerda */
+}
+
+.nav-right {
+    display: flex;
+    gap: 31px;  /* Distância entre os itens do menu */
+}
