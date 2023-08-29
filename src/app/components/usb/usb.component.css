@@ -15,10 +15,13 @@
     flex-direction: column;
     align-items: end;
     margin-top: 350px;
-    margin-left: 8px;
+    margin-left: 9px;
+    margin-bottom: 3px;
 }
 
-
+.linha-diagonal-1 {
+    margin-top: -5px;
+}
 
 svg path {
     stroke-width: 3px;
