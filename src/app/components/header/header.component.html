@@ -22,20 +22,32 @@
 
 <div class="header-mobile-container">
     <button class="menu-mobile" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-        <mat-icon>more_vert</mat-icon>
+        <mat-icon>menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
         <button mat-menu-item>
-            <mat-icon>dialpad</mat-icon>
-            <span>Redial</span>
-        </button>
-        <button mat-menu-item disabled>
-            <mat-icon>voicemail</mat-icon>
-            <span>Check voice mail</span>
+            <mat-icon>person</mat-icon>
+            <span>Já sou cliente</span>
         </button>
         <button mat-menu-item>
-            <mat-icon>notifications_off</mat-icon>
-            <span>Disable alerts</span>
+            <mat-icon>wysiwyg</mat-icon>
+            <span>Conheça nosso ERP</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>description</mat-icon>
+            <span>Sobre</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>lightbulb</mat-icon>
+            <span>Soluções</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>forum</mat-icon>
+            <span>Cases</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>shopping bag</mat-icon>
+            <span>Store</span>
         </button>
     </mat-menu>
     

@@ -50,32 +50,24 @@ a {
     }
 
     .header-mobile-container {
-        display: block;
-    }
-
-    .mat-menu-content {
-        background-color: #f4f4f4;
-    }
-    
-    .mat-menu-item {
-        color: #333;
-        &:hover {
-            background-color: #e0e0e0;
-        }
+        display: flex;
+        justify-content: end;
+        margin: 5px;
     }
 
     .menu-mobile {
         background:  transparent;
         border: none;
         border-radius: 50%;
-    }
-
-    .menu-mobile:hover {
-        background: #FF6D08;
+        width: 50px;
+        height: 50px;
     }
 
     mat-icon {
-        color: #3498db;
+        /* color: var(--main-elements-color); */
+        color: #2B304D;
     }
+
+
     
 }
