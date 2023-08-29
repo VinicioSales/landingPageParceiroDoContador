@@ -1,0 +1,17 @@
+/* :host {
+    width: 5262.327px;
+    height: 0px;
+    transform: rotate(-90deg);
+    flex-shrink: 0;
+} */
+
+.container-usb {
+    position: absolute;
+    margin-top: 161px;
+    margin-left: 85.4px;
+}
+
+svg path {
+    stroke-width: 3px;
+
+}

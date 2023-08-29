@@ -6,6 +6,7 @@
     background-color: transparent;
     background: #2B304D;
     font-size: 0.72rem;
+    position: fixed;
 }
 
 .esquerda {
