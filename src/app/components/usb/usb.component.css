@@ -9,6 +9,23 @@
     position: absolute;
     margin-top: 161px;
     margin-left: 85.4px;
+    display: flex;
+}
+
+.linha-1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: -12px;
+    margin-top: 350px;
+    align-items: center;
+
+}
+
+.linha-2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: -12px;
+    margin-top: 350px;
 }
 
 svg path {
