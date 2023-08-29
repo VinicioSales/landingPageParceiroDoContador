@@ -39,6 +39,12 @@ svg path {
 
 @media screen and (max-width: 810px) {
     .container-usb {
-        display: none;
+        /* display: none; */
+        margin-left: -90px;
+        transform: scale(0.5);
+    }
+
+    .usb {
+        padding-top: 410px;
     }
 }
