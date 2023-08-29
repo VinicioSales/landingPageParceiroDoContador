@@ -1,0 +1,31 @@
+.sobre-container {
+    background: #0F101E;
+    /* width: 80%; */
+    height: 792px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.introducao {
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+}
+
+.valores-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coluna {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}

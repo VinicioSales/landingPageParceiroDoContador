@@ -9,13 +9,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
 import { UsbComponent } from './components/usb/usb.component';
+import { SobreComponent } from './components/sobre/sobre.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    UsbComponent
+    UsbComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
