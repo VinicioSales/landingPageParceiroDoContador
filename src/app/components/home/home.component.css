@@ -1,0 +1,54 @@
+.home-container {
+    height: 603px;
+    background: #2B304D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.frase-home {
+    font-size: 2.77rem;
+    font-weight: 700;
+    color: var(--main-text-color);
+    font-family: var(--main-titulo-text);
+    margin-top: 100px;
+    margin-left: 163px;
+}
+
+.container-titulo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo {
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--main-text-color);
+    display: flex;
+    justify-content: center;
+    letter-spacing: 8.55px;
+    font-family: var(--main-titulo-text);
+    margin-top: 155px;
+}
+
+.sub-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.845px;
+    color: var(--main-text-color);
+    
+
+}
+
+.linha {
+    width: 161px;
+    height: 1px;
+    background: var(--main-elements-color);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+

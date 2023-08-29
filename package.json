@@ -23,6 +23,7 @@
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "typeface-bungee": "^1.1.13",
+    "typeface-inter": "^3.18.1",
     "typeface-ubuntu": "^1.1.13",
     "zone.js": "~0.13.0"
   },

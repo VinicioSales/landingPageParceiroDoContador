@@ -1,5 +1,6 @@
 @import '~typeface-bungee';
 @import '~typeface-ubuntu';
+@import '~typeface-inter';
 
 
 html, body {
@@ -19,4 +20,6 @@ a {
 :root {
     --main-text-color: white;
     --main-elements-color: white;
+    --main-titulo-text: 'Inter', sans-serif;
 }
+
