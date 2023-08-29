@@ -4,20 +4,78 @@
     align-items: center;
     width: 100%;
     background-color: transparent;
-    padding: 0 27px;  /* Para a logo ter uma margem de 27px no lado esquerdo */
+    background: #2B304D;
+    font-size: 0.72rem;
 }
 
+
+.esquerda {
+    display: flex;
+    margin-left: 27px;
+}
 .logo img {
-    /* Adicione estilos para a imagem do logo, se necessário */
+    width: 40px;
+    height: 40px;
+    
 }
 
 .nav-left {
     display: flex;
-    gap: 29px;  /* Distância entre os itens do menu */
-    margin-left: 62px;  /* Distância entre a logo e o menu à esquerda */
+    gap: 45px;  
+    margin-left: 62px; 
+    align-items: center;
 }
 
 .nav-right {
     display: flex;
-    gap: 31px;  /* Distância entre os itens do menu */
+    margin-right: 27px;
+    gap: 45px;
+    align-items: center;
+
+}
+
+a {
+    color: var(--main-text-color);
+}
+
+.header-mobile-container {
+    display: none;
+}
+
+@media screen and (max-width: 810px) {
+    .esquerda,
+    .nav-left,
+    .nav-right {
+        display: none;
+    }
+
+    .header-mobile-container {
+        display: block;
+    }
+
+    .mat-menu-content {
+        background-color: #f4f4f4;
+    }
+    
+    .mat-menu-item {
+        color: #333;
+        &:hover {
+            background-color: #e0e0e0;
+        }
+    }
+
+    .menu-mobile {
+        background:  transparent;
+        border: none;
+        border-radius: 50%;
+    }
+
+    .menu-mobile:hover {
+        background: #FF6D08;
+    }
+
+    mat-icon {
+        color: #3498db;
+    }
+    
 }

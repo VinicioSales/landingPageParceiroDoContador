@@ -1,18 +1,42 @@
 <div class="header-container">
-    <div class="logo">
-        <!-- Logo vai aqui, pode ser uma imagem ou texto -->
-        <img src="path_to_logo.png" alt="Logo da empresa">
+    <div class="esquerda">
+        <div class="logo">
+            <!-- Logo vai aqui, pode ser uma imagem ou texto -->
+            <img class="logo" src="assets/img/logo-branca.png" alt="Logo da Parceiro">
+        </div>
+    
+        <nav class="nav-left">
+            <a href="#">Já sou cliente</a>
+            <a href="#">Conheça nosso ERP</a>
+        </nav>
     </div>
+    <div class="direita">
+        <nav class="nav-right">
+            <a href="#">Sobre</a>
+            <a href="#">Soluções</a>
+            <a href="#">Cases</a>
+            <a href="#">Store</a>
+        </nav>
+    </div>
+</div>
 
-    <nav class="nav-left">
-        <a href="#">Já sou cliente</a>
-        <a href="#">Conheça nosso ERP</a>
-    </nav>
-
-    <nav class="nav-right">
-        <a href="#">Sobre</a>
-        <a href="#">Soluções</a>
-        <a href="#">Cases</a>
-        <a href="#">Store</a>
-    </nav>
+<div class="header-mobile-container">
+    <button class="menu-mobile" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Redial</span>
+        </button>
+        <button mat-menu-item disabled>
+            <mat-icon>voicemail</mat-icon>
+            <span>Check voice mail</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>notifications_off</mat-icon>
+            <span>Disable alerts</span>
+        </button>
+    </mat-menu>
+    
 </div>
