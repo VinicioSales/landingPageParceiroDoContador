@@ -6,11 +6,12 @@
 }
 
 .braco-1 {
-    background-color: blue;
+    /* background-color: blue; */
+    margin-left: -13px;
 }
 
 .linha-1 {
-    background-color: green;
+    /* background-color: green; */
     display: flex;
     flex-direction: column;
     align-items: end;
