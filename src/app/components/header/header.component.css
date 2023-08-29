@@ -3,11 +3,17 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: transparent;
-    background: #2B304D;
+    /* background: rgba(22, 27, 55, 0.5); */
+
     font-size: 0.72rem;
     position: fixed;
+    backdrop-filter: blur(10px);
 }
+
+.header-scrolled {
+    background: rgba(22, 27, 55, 0.2);
+}
+
 
 .esquerda {
     display: flex;
