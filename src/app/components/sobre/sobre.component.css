@@ -18,6 +18,7 @@
 }
 
 .introducao {
+    background-color: red;
     grid-area:  intro;
     padding: 1rem 0;
     /* border-bottom: 1px solid #eee; */
@@ -41,16 +42,23 @@
 }
 
 .valores-container {
+    background: green;
     grid-area: valores;
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     
 }
 
 .coluna {
     flex: 1;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
+    padding-top: 40px;
     text-align: center;
+}
+
+.linha-valores {
+    margin-bottom: 90px;
 }
 
 h2 {
