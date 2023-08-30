@@ -18,7 +18,6 @@
 }
 
 .introducao {
-    background-color: red;
     grid-area:  intro;
     padding: 1rem 0;
     /* border-bottom: 1px solid #eee; */
@@ -42,12 +41,19 @@
 }
 
 .valores-container {
-    background: green;
     grid-area: valores;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
     
+}
+
+.linha-superior {
+    margin-bottom: -7px;
+}
+
+.valores {
+    display: flex;
 }
 
 .coluna {
