@@ -20,7 +20,6 @@
 .introducao {
     grid-area:  intro;
     padding: 1rem 0;
-    /* border-bottom: 1px solid #eee; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,4 +77,30 @@ h2 {
     opacity: 80%;
     font-weight: 600;
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 810px) {
+    .texto-introducao {
+        width: 80%;
+        font-size: 0.8rem;
+    }
+
+    .valores {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .valores-linhas,
+    .linha-valores,
+    .linha-superior {
+        display: none;
+    }
+
+    .coluna {
+        width: 80%;
+    }
+
 }
