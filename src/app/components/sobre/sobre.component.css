@@ -79,6 +79,10 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.bola-separadora {
+    display: none;
+}
+
 @media screen and (max-width: 810px) {
     .texto-introducao {
         width: 80%;
@@ -101,6 +105,11 @@ h2 {
 
     .coluna {
         width: 80%;
+    }
+
+    .bola-separadora {
+        display: block;
+        margin-top: 30px;
     }
 
 }
