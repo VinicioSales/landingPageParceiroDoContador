@@ -22,6 +22,7 @@ a {
 :root {
     --main-text-color: white;
     --main-elements-color: white;
+    --second-text-color: #0F101E;
     --main-titulo-text: 'Inter', sans-serif;
 }
 

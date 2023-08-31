@@ -1,0 +1,10 @@
+.container-botao {
+    background: #FFF;
+    color: var(--second-text-color);
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.845px;
+    
+    
+}

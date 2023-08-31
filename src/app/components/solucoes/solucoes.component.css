@@ -21,7 +21,7 @@
 .container-solucao {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-rows: 15vh 70vh 15vh;
     grid-template-areas:    "titulo titulo"
                             "midia descricao"
                             "botao botao";

@@ -11,7 +11,8 @@ import { HomeComponent } from './components/home/home.component';
 import { UsbComponent } from './components/usb/usb.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { SolucoesComponent } from './components/solucoes/solucoes.component';
-import { CarouselModule } from 'ngx-bootstrap/carousel'
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { BotaoComponent } from './components/botao/botao.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel'
     HomeComponent,
     UsbComponent,
     SobreComponent,
-    SolucoesComponent
+    SolucoesComponent,
+    BotaoComponent
   ],
   imports: [
     BrowserModule,
