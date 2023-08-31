@@ -1,6 +1,25 @@
 .container-solucoes {
     background:     #0F101E;
     height: 685px;
-    
-    color: white;
+    color: var(--main-text-color);
 }
+
+.titulo-solucoes {
+    display: flex;
+    justify-content: center;
+    font-family: var(--main-titulo-text);
+    font-weight: 600;
+    font-size: 1.66rem;
+    margin-bottom: 70px;
+}
+
+.container-solucao {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas:    "titulo titulo"
+                            "midia descricao"
+                            "botao botao";
+}
+
+
