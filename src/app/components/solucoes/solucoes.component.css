@@ -53,6 +53,8 @@
     margin: -40px;
 }
 
+
+
 .descricao {
     grid-area: descricao;
     display: flex;
@@ -72,3 +74,11 @@
     justify-content: center;
     align-items: center;
 }
+
+.linha {
+    width: 1px;
+    height: 276px;
+    background: #FFF;
+    
+}
+

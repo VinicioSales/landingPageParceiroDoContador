@@ -1,10 +1,21 @@
 .container-botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #FFF;
     color: var(--second-text-color);
     text-align: center;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 0.845px;
-    
-    
+    height: 22px;
+    border-radius: 2px;
+    flex-shrink: 1;
+}
+
+.container-botao:hover {
+    cursor: pointer;
+    background-color: var(--third-main-color);
+    color: var(--main-text-color);
+    transition: 0.2s;
 }
