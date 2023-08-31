@@ -15,11 +15,39 @@
 
 .container-solucao {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 10vh 80vh 10vh;
     grid-template-areas:    "titulo titulo"
                             "midia descricao"
                             "botao botao";
 }
 
+.titulo-solucao {
+    background-color: red;
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    font-family: var(--main-titulo-text);
+    font-size: 1.11rem;
+    font-weight: 700;
+}
 
+.midias {
+    background-color: green;
+    grid-area: midia;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao {
+    background-color: yellow;
+    grid-area: descricao;
+}
+
+.botao {
+    background-color: blue;
+    grid-area: botao;
+}
