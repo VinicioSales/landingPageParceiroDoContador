@@ -1,57 +1,69 @@
 <div class="header-container" [class.header-scrolled]="isScrolled">
-    <div class="esquerda">
-        <div class="logo">
-            <!-- Logo vai aqui, pode ser uma imagem ou texto -->
-            <img class="logo" src="assets/img/logo-branca.png" alt="Logo da Parceiro">
-        </div>
-    
-        <nav class="nav-left">
-            <a href="#">Já sou cliente</a>
-            <a href="#">Conheça nosso ERP</a>
-        </nav>
-    </div>
-    <div class="direita">
-        <nav class="nav-right">
-            <a href="#">Sobre</a>
-            <a href="#">Soluções</a>
-            <a href="#">Cases</a>
-            <a href="#">Store</a>
-        </nav>
-    </div>
+	<div class="esquerda">
+		<div class="logo">
+			<!-- Logo vai aqui, pode ser uma imagem ou texto -->
+			<img
+				class="logo"
+				src="assets/img/logo-branca.png"
+				alt="Logo da Parceiro"
+			/>
+		</div>
+
+		<nav class="nav-left">
+			<a href="#">Já sou cliente</a>
+			<a href="#">Conheça nosso ERP</a>
+		</nav>
+	</div>
+	<div class="direita">
+		<nav class="nav-right">
+			<a href="#" (click)="scrollToSection('sobre')">Sobre</a>
+			<a href="#" (click)="scrollToSection('solucoes')">Soluções</a>
+			<a href="#" (click)="scrollToSection('cases')">Cases</a>
+			<a href="#">Store</a>
+		</nav>
+	</div>
 </div>
 
 <div class="header-mobile-container">
-    <div class="logo">
-        <img class="logo" src="assets/img/logo-branca.png" alt="Logo da Parceiro">
-    </div>
-    <button class="menu-mobile" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-        <mat-icon>menu</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-        <button mat-menu-item>
-            <mat-icon>person</mat-icon>
-            <span>Já sou cliente</span>
-        </button>
-        <button mat-menu-item>
-            <mat-icon>wysiwyg</mat-icon>
-            <span>Conheça nosso ERP</span>
-        </button>
-        <button mat-menu-item>
-            <mat-icon>description</mat-icon>
-            <span>Sobre</span>
-        </button>
-        <button mat-menu-item>
-            <mat-icon>lightbulb</mat-icon>
-            <span>Soluções</span>
-        </button>
-        <button mat-menu-item>
-            <mat-icon>forum</mat-icon>
-            <span>Cases</span>
-        </button>
-        <button mat-menu-item>
-            <mat-icon>shopping bag</mat-icon>
-            <span>Store</span>
-        </button>
-    </mat-menu>
-    
+	<div class="logo">
+		<img
+			class="logo"
+			src="assets/img/logo-branca.png"
+			alt="Logo da Parceiro"
+		/>
+	</div>
+	<button
+		class="menu-mobile"
+		mat-icon-button
+		[matMenuTriggerFor]="menu"
+		aria-label="Example icon-button with a menu"
+	>
+		<mat-icon>menu</mat-icon>
+	</button>
+	<mat-menu #menu="matMenu">
+		<button mat-menu-item>
+			<mat-icon>person</mat-icon>
+			<span>Já sou cliente</span>
+		</button>
+		<button mat-menu-item>
+			<mat-icon>wysiwyg</mat-icon>
+			<span>Conheça nosso ERP</span>
+		</button>
+		<button mat-menu-item>
+			<mat-icon>description</mat-icon>
+			<span>Sobre</span>
+		</button>
+		<button mat-menu-item>
+			<mat-icon>lightbulb</mat-icon>
+			<span>Soluções</span>
+		</button>
+		<button mat-menu-item>
+			<mat-icon>forum</mat-icon>
+			<span>Cases</span>
+		</button>
+		<button mat-menu-item>
+			<mat-icon>shopping bag</mat-icon>
+			<span>Store</span>
+		</button>
+	</mat-menu>
 </div>

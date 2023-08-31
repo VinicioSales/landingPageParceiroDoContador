@@ -1,20 +1,21 @@
 <div class="container-solucoes">
-    <div class="titulo-solucoes">
-        SOLUÇÕES
-    </div>
-    <div class="container-solucao">
-        <div class="titulo-solucao">{{ tituloSolucao }}</div>
-        <div class="midias">
-            <img class="midia" src="assets/img/engrenagem.png" alt="Engrenagem">
-            <img class="midia" src="assets/img/cerebro.png" alt="Cerebro">
-        </div>
-        <div class="descricao">{{ descricao }}</div>
-        <div class="botao">
-            <!-- <button>Saiba mais</button> -->
-            <app-botao
-                [texto]="'Saiba mais'"
-                [width]="'80%'"
-            ></app-botao>
-        </div>
-    </div>
+	<section id="solucoes">
+		<div class="titulo-solucoes">SOLUÇÕES</div>
+	</section>
+	<div class="container-solucao">
+		<div class="titulo-solucao">{{ tituloSolucao }}</div>
+		<div class="midias">
+			<img
+				class="midia"
+				src="assets/img/engrenagem.png"
+				alt="Engrenagem"
+			/>
+			<img class="midia" src="assets/img/cerebro.png" alt="Cerebro" />
+		</div>
+		<div class="descricao">{{ descricao }}</div>
+		<div class="botao">
+			<!-- <button>Saiba mais</button> -->
+			<app-botao [texto]="'Saiba mais'" [width]="'80%'"></app-botao>
+		</div>
+	</div>
 </div>
