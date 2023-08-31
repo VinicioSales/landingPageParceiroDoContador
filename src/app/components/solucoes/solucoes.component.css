@@ -2,6 +2,10 @@
     background:     #0F101E;
     height: 685px;
     color: var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .titulo-solucoes {
@@ -10,7 +14,8 @@
     font-family: var(--main-titulo-text);
     font-weight: 600;
     font-size: 1.66rem;
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
+    
 }
 
 .container-solucao {
@@ -20,20 +25,20 @@
     grid-template-areas:    "titulo titulo"
                             "midia descricao"
                             "botao botao";
+    width: 80%;
 }
 
 .titulo-solucao {
-    background-color: red;
     grid-area: titulo;
     display: flex;
     justify-content: center;
     font-family: var(--main-titulo-text);
     font-size: 1.11rem;
     font-weight: 700;
+    align-items: end;
 }
 
 .midias {
-    background-color: green;
     grid-area: midia;
     padding: 20px;
     display: flex;
@@ -42,12 +47,28 @@
     align-items: center;
 }
 
+.midia {
+    width: 238px;
+    height: 238px;
+    margin: -40px;
+}
+
 .descricao {
-    background-color: yellow;
     grid-area: descricao;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:justify;
+    font-family: var(--main-text-color);
+    font-size: 1.11rem;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    
 }
 
 .botao {
-    background-color: blue;
     grid-area: botao;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
