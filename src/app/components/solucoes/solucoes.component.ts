@@ -1,4 +1,4 @@
-import { Component, ViewChild  } from '@angular/core';
+import { Component, ViewChild, Input  } from '@angular/core';
 import { CarouselComponent } from 'ngx-bootstrap/carousel';
 
 @Component({
@@ -7,6 +7,8 @@ import { CarouselComponent } from 'ngx-bootstrap/carousel';
   styleUrls: ['./solucoes.component.css']
 })
 export class SolucoesComponent {
-  descricao: string = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-  tituloSolucao: string = 'Automações'
+  @Input() imagem1!: string;
+  @Input() imagem2!: string;
+  @Input() descricao!: string;
+  @Input() tituloSolucao!: string;
 }

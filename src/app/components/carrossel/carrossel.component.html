@@ -1,8 +1,13 @@
 <ngb-carousel>
-    <ng-template ngbSlide *ngFor="let image of images">
+    <ng-template ngbSlide *ngFor="let solucao of solucoes">
         <div class="carrossel">
-            <img src="assets/img/{{image.name}}" [alt]="image.caption">
-            <div class="caption">{{image.caption}}</div>
+            <app-solucoes
+                [tituloSolucao]="solucao.tituloSolucao"
+                [descricao]="solucao.descricao"
+                [imagem1]="solucao.imagem1"
+                [imagem2]="solucao.imagem2"
+                >
+            </app-solucoes>
         </div>
     </ng-template>
 </ngb-carousel>
