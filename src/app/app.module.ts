@@ -12,7 +12,9 @@ import { UsbComponent } from './components/usb/usb.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { SolucoesComponent } from './components/solucoes/solucoes.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { BotaoComponent } from './components/botao/botao.component'
+import { BotaoComponent } from './components/botao/botao.component';
+import { NgbModule, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarrosselComponent } from './components/carrossel/carrossel.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { BotaoComponent } from './components/botao/botao.component'
     UsbComponent,
     SobreComponent,
     SolucoesComponent,
-    BotaoComponent
+    BotaoComponent,
+    CarrosselComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,9 @@ import { BotaoComponent } from './components/botao/botao.component'
     BrowserAnimationsModule,
     MatMenuModule,
     MatIconModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    NgbModule,
+    NgbCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
