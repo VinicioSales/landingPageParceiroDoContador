@@ -39,7 +39,6 @@
 
 .botao {
     grid-area: botao;
-    /* display: flex; */
     justify-content: center;
 }
 

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
+import { ProdutosService } from '../../services/produtos.service';
 
 @Component({
   selector: 'app-modal-solucoes',
@@ -17,8 +18,26 @@ export class ModalSolucoesComponent {
     }
   ];
 
-  constructor() { }
+  // produtos!: any[];
 
-  ngOnInit(): void {
-  }
+  // constructor(private produtosService: ProdutosService) { }
+
+  // ngOnInit(): void {
+  //   console.log("ngOnInit");
+  //   this.produtosService.getProdutos().subscribe(
+  //     data => {
+  //       this.produtos = data.map((produto: { imagem: any; descricao: any; }) => {
+  //         return {
+  //           imagem: produto.imagem,
+  //           descricao: produto.descricao
+  //         };
+  //       });
+  //     },
+  //     error => {
+  //       console.error('Erro ao buscar produtos:', error);
+  //     }
+  //   );
+  // }
+
+
 }
