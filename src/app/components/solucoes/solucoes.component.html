@@ -2,39 +2,26 @@
     <div class="titulo-solucoes">
         SOLUÇÕES
     </div>
-    <ngb-carousel>
-        <ng-template ngbSlide *ngFor="let solucao of solucoes">
-            <div class="carrossel">
-                <!-- <app-solucoes
-                    [imagem1]="solucao.imagem1"
-                    [imagem2]="solucao.imagem2"
-                    [descricao]="solucao.descricao"
-                    [tituloSolucao]="solucao.tituloSolucao"
-                    >
-                </app-solucoes> -->
-
-                <div class="titulo-solucao">{{ solucao.tituloSolucao }}</div>
-                <div class="container-solucao">
-                    <div class="midias">
-                        <img class="midia" src="{{solucao.imagem1}}" alt="">
-                        <img class="midia" src="{{solucao.imagem2}}" alt="">
-                    </div>
-                    <div class="descricao">{{ solucao.descricao }}</div>
-                    <div class="botao">
-                        <app-botao
-                            [texto]="'Saiba mais'"
-                            [width]="'1041px'"
-                        ></app-botao>
+    <div class="container-carrossel">
+        <ngb-carousel>
+            <ng-template ngbSlide *ngFor="let solucao of solucoes">
+                <div class="carrossel">
+                    <div class="container-solucao">
+                        <div class="titulo-solucao">{{ solucao.tituloSolucao }}</div>
+                        <div class="midias">
+                            <img class="midia" src="{{solucao.imagem1}}" alt="">
+                            <img class="midia" src="{{solucao.imagem2}}" alt="">
+                        </div>
+                        <div class="descricao">{{ solucao.descricao }}</div>
+                        <div class="botao">
+                            <app-botao
+                                [texto]="'Saiba mais'"
+                                [width]="''"
+                            ></app-botao>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </ng-template>
-    </ngb-carousel>
-
-
-    
-
-
-
-
+            </ng-template>
+        </ngb-carousel>
+    </div>
 </div>
