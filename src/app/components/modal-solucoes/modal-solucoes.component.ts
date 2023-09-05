@@ -11,10 +11,10 @@ export class ModalSolucoesComponent {
       imagem: 'assets/img/dados.png',
       descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
     },
-    // {
-    //   imagem: 'assets/img/dados.png',
-    //   descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
-    // }
+    {
+      imagem: 'assets/img/dados.png',
+      descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
+    }
   ];
 
   constructor() { }

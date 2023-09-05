@@ -14,7 +14,9 @@
     grid-template-columns: auto auto;
     grid-template-rows: 80% 20%;
     grid-template-areas:    "img descricao"
-                            "img botao";
+                            "img botao"
+                            "linha linha";
+    margin-bottom: 15px;
 }
 
 .img {
@@ -39,4 +41,14 @@
     grid-area: botao;
     /* display: flex; */
     justify-content: center;
+}
+
+.linha-divisoria {
+    grid-area: linha;
+    display: flex;
+    justify-self: center;
+    margin: 5px;
+    height: 1px;
+    width: 100%;
+    background-color: white;
 }
