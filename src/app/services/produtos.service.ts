@@ -12,6 +12,6 @@ export class ProdutosService {
 
   getProdutos(): Observable<any> {
     console.log("getProdutos");
-    return this.http.get(`${BACK_URL}/get-produtos`);
+    return this.http.get(`${BACK_URL}/products`);
   }
 }

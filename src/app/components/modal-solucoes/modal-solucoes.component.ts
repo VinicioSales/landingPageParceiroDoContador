@@ -9,38 +9,38 @@ import { ProdutosService } from '../../services/produtos.service';
 export class ModalSolucoesComponent {
   @Output() closeModal = new EventEmitter<void>();
 
-  produtos = [
-    {
-      imagem: 'assets/img/dados.png',
-      descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
-    },
-    {
-      imagem: 'assets/img/dados.png',
-      descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
-    },
-  ];
+  // produtos = [
+  //   {
+  //     imagem: 'assets/img/dados.png',
+  //     descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
+  //   },
+  //   {
+  //     imagem: 'assets/img/dados.png',
+  //     descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
+  //   },
+  // ];
 
 
-  // produtos!: any[];
+  produtos!: any[];
 
-  // constructor(private produtosService: ProdutosService) { }
+  constructor(private produtosService: ProdutosService) { }
 
-  // ngOnInit(): void {
-  //   console.log("ngOnInit");
-  //   this.produtosService.getProdutos().subscribe(
-  //     data => {
-  //       this.produtos = data.map((produto: { imagem: any; descricao: any; }) => {
-  //         return {
-  //           imagem: produto.imagem,
-  //           descricao: produto.descricao
-  //         };
-  //       });
-  //     },
-  //     error => {
-  //       console.error('Erro ao buscar produtos:', error);
-  //     }
-  //   );
-  // }
+  ngOnInit(): void {
+    this.produtosService.getProdutos().subscribe(
+      data => {
+        console.log(data)
+        this.produtos = data.map((produto: { imagem: any; descricao: any; }) => {
+          return {
+            imagem: produto.imagem,
+            descricao: produto.descricao
+          };
+        });
+      },
+      error => {
+        console.error('Erro ao buscar produtos:', error);
+      }
+    );
+  }
 
 
 }

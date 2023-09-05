@@ -21,12 +21,10 @@ export class SolucoesComponent {
 
 
   openModal() {
-    console.log("openModal")
     this.showModal = true;
   }
 
   closeModal() {
-    console.log("closeModal")
     this.showModal = false;
   }
 }

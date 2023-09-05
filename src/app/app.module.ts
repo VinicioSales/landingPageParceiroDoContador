@@ -16,6 +16,7 @@ import { BotaoComponent } from './components/botao/botao.component';
 import { NgbModule, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModalSolucoesComponent } from './components/modal-solucoes/modal-solucoes.component';
 import { Botao2Component } from './components/botao2/botao2.component'
+import { HttpClientModule } from '@angular/common/http'; 
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { Botao2Component } from './components/botao2/botao2.component'
     MatIconModule,
     CarouselModule.forRoot(),
     NgbModule,
-    NgbCarouselModule
+    NgbCarouselModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
