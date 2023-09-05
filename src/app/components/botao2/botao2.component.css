@@ -1,0 +1,21 @@
+.botao {
+    display: flex;
+}
+
+#botao {
+    /* margin-top: 5px; */
+    background: var(--cor-3, #FF8933);
+    border: none;
+    border-radius: 2px;
+    color: var(--cor-fonte-2, #FFF);
+    font-family: Inter;
+    font-weight: 600;
+    /* height: 25px; */
+    
+}
+
+
+#botao:hover {
+    background: var(--cor-3, #dd6d1d);
+    cursor: pointer;
+}

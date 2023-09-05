@@ -14,7 +14,8 @@ import { SolucoesComponent } from './components/solucoes/solucoes.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { BotaoComponent } from './components/botao/botao.component';
 import { NgbModule, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
-import { CarrosselComponent } from './components/carrossel/carrossel.component'
+import { ModalSolucoesComponent } from './components/modal-solucoes/modal-solucoes.component';
+import { Botao2Component } from './components/botao2/botao2.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CarrosselComponent } from './components/carrossel/carrossel.component'
     SobreComponent,
     SolucoesComponent,
     BotaoComponent,
-    CarrosselComponent
+    ModalSolucoesComponent,
+    Botao2Component
   ],
   imports: [
     BrowserModule,

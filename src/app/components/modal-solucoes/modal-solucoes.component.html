@@ -1,0 +1,22 @@
+<div class="container">
+    <div *ngFor="let produto of produtos" class="produto-item">
+        <div class="img">
+            <img [src]="produto.imagem" alt="{{produto.descricao}}" class="">
+        </div>
+        <div class="produto-info">
+            {{produto.descricao}}
+        </div>
+        <div class="botao">
+            <!-- <app-botao2
+                texto="Ir para loja"
+                fontSize="0.66rem"
+                >
+            </app-botao2> -->
+            <app-botao
+                texto="Ir para loja"
+                
+                >
+            </app-botao>
+        </div>
+    </div>
+</div>

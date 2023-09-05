@@ -1,0 +1,42 @@
+.container {
+    background-color: #2b304d;
+    width: 350px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.bg-custom {
+    background-color: #2B304D;
+}
+
+.produto-item {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 80% 20%;
+    grid-template-areas:    "img descricao"
+                            "img botao";
+}
+
+.img {
+    grid-area: img;
+    display: flex;
+    align-items: center;
+    max-height: auto;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.produto-info {
+    display: flex;
+    align-items: center;
+    grid-area: descricao;
+    text-align: left;
+    color: var(--main-text-color);
+    font-size: 0.70rem;
+}
+
+.botao {
+    grid-area: botao;
+    /* display: flex; */
+    justify-content: center;
+}
