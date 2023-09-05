@@ -14,8 +14,6 @@
     font-family: var(--main-titulo-text);
     font-weight: 600;
     font-size: 1.66rem;
-    /* margin-bottom: 70px; */
-    
 }
 
 .container-solucao {
@@ -53,6 +51,8 @@
     margin: -40px;
 }
 
+
+
 .descricao {
     grid-area: descricao;
     display: flex;
@@ -70,5 +70,13 @@
     grid-area: botao;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
+
+.linha {
+    width: 1px;
+    height: 276px;
+    background: #FFF;
+    
+}
+
