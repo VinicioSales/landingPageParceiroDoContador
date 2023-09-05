@@ -19,7 +19,7 @@
 .container-solucao {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-rows: 25vh 50vh 25vh;
     grid-template-areas:    "titulo titulo"
                             "midia descricao"
                             "botao botao";
@@ -110,6 +110,10 @@
 
 .container-carrossel .carrossel {
     z-index: 5;
+}
+
+::ng-deep .carousel-indicators {
+    margin-bottom: 95px;
 }
 
 
