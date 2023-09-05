@@ -8,7 +8,7 @@ import { ProdutosService } from '../../services/produtos.service';
 })
 export class ModalSolucoesComponent {
   @Output() closeModal = new EventEmitter<void>();
-  
+
   produtos = [
     {
       imagem: 'assets/img/dados.png',
@@ -17,7 +17,7 @@ export class ModalSolucoesComponent {
     {
       imagem: 'assets/img/dados.png',
       descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
-    }
+    },
   ];
 
 
