@@ -1,4 +1,5 @@
 <div class="container-solucoes">
+    <app-modal-solucoes *ngIf="showModal" (closeModal)="closeModal()"></app-modal-solucoes>
     <div class="titulo-solucoes">
         SOLUÇÕES
     </div>
@@ -16,7 +17,7 @@
                         <div class="botao">
                             <app-botao
                                 [texto]="'Saiba mais'"
-                                [width]="''"
+                                (click)="openModal()"
                             ></app-botao>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit  } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter  } from '@angular/core';
 import { ProdutosService } from '../../services/produtos.service';
 
 @Component({
@@ -7,6 +7,8 @@ import { ProdutosService } from '../../services/produtos.service';
   styleUrls: ['./modal-solucoes.component.css']
 })
 export class ModalSolucoesComponent {
+  @Output() closeModal = new EventEmitter<void>();
+  
   produtos = [
     {
       imagem: 'assets/img/dados.png',
@@ -17,6 +19,7 @@ export class ModalSolucoesComponent {
       descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
     }
   ];
+
 
   // produtos!: any[];
 
