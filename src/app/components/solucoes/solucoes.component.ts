@@ -10,7 +10,7 @@ export class SolucoesComponent {
   @Input() imagem2!: string;
   @Input() descricao!: string;
   @Input() tituloSolucao!: string;
-  showModal: boolean = true;
+  showModal: boolean = false;
 
 
   solucoes = [
