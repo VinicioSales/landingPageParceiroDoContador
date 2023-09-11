@@ -42,5 +42,11 @@ export class ModalSolucoesComponent {
     );
   }
 
+  handleWrapperClick(event: MouseEvent) {
+    // Check if the click target is the modal wrapper itself
+    if ((event.target as HTMLElement).classList.contains('modal-wrapper')) {
+        this.closeModal.emit();
+    }
+}
 
 }
