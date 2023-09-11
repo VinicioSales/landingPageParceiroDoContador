@@ -11,11 +11,11 @@ export class ModalSolucoesComponent {
 
   // produtos = [
   //   {
-  //     imagem: 'assets/img/dados.png',
+  //     midia: 'assets/img/dados.png',
   //     descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
   //   },
   //   {
-  //     imagem: 'assets/img/dados.png',
+  //     midia: 'assets/img/dados.png',
   //     descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
   //   },
   // ];
@@ -29,9 +29,9 @@ export class ModalSolucoesComponent {
     this.produtosService.getProdutos().subscribe(
       data => {
         console.log(data)
-        this.produtos = data.map((produto: { imagem: any; descricao: any; }) => {
+        this.produtos = data.map((produto: { midia: any; descricao: any; }) => {
           return {
-            imagem: produto.imagem,
+            midia: produto.midia,
             descricao: produto.descricao
           };
         });
