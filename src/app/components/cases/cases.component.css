@@ -12,8 +12,11 @@
 .titulo {
     grid-area: titulo;
     justify-self: center;
+    align-self: center;
     font-size: 1.6rem;
     font-weight: 600;
+    font-family: var(--main-titulo-text);
+    
 }
 
 .linha {
@@ -26,20 +29,23 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px;
+    padding: 0 40px 0 100px;
+    margin-top: 30px;
 }
 
 .case {
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 }
 
 .linha-case {
     width: 100px;
-    border-bottom: 3px solid white; 
+    border-bottom: 2px solid white; 
     transform: rotate(45deg);
-    margin: 50px;
+    margin-top: 20px;
 }
 
 .circulo {
@@ -53,9 +59,25 @@
     position: relative; 
 }
 
+.linha-circulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .image-inside-circle {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+.texto  {
+    margin-top: 17px;
+    width: 80%;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: var(--main-titulo-text);
 }
