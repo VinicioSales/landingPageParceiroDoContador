@@ -16,7 +16,8 @@ import { BotaoComponent } from './components/botao/botao.component';
 import { NgbModule, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModalSolucoesComponent } from './components/modal-solucoes/modal-solucoes.component';
 import { Botao2Component } from './components/botao2/botao2.component'
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
+import { FormularioComponent } from './components/formulario/formulario.component'; 
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     SolucoesComponent,
     BotaoComponent,
     ModalSolucoesComponent,
-    Botao2Component
+    Botao2Component,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
