@@ -30,7 +30,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 0 40px 0 100px;
-    margin-top: 30px;
+    margin-top: 29px;
 }
 
 .case {
@@ -42,7 +42,7 @@
 
 .linha-case {
     width: 100px;
-    border-bottom: 2px solid white; 
+    border-bottom: 3px solid white; 
     transform: rotate(45deg);
     margin-top: 20px;
 }
@@ -79,4 +79,14 @@
     font-weight: 500;
     line-height: 1.2;
     font-family: var(--main-titulo-text);
+}
+
+.retangulo {
+    height: 100px;
+    width: 200px;
+    background-color: #151519;
+    /* background-color: red; */
+    margin-top: -20px;
+    margin-left: 130px;
+    position: absolute;
 }
