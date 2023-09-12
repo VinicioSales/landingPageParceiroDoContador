@@ -11,6 +11,7 @@ export class FormularioComponent implements OnInit{
 
   constructor(private fb: FormBuilder) { }
 
+  //NOTE - ngOnInit
   ngOnInit() {
     this.form = this.fb.group({
       nome: ['', [Validators.required, this.noNumberValidator]],
@@ -21,24 +22,26 @@ export class FormularioComponent implements OnInit{
     });
   }
 
+  //NOTE - noNumberValidator
   noNumberValidator(control: AbstractControl): { [key: string]: boolean } | null {
     console.log("noNumberValidator");
     const hasNumber = /\d/.test(control.value);
     return hasNumber ? { 'hasNumber': true } : null;
   }
 
+  //NOTE - phoneValidator
   phoneValidator(control: AbstractControl): { [key: string]: boolean } | null {
     console.log("phoneValidator");
-    const pattern = /^\(\d{3}\) \d \d{4}-\d{4}$/;
+    const pattern = /^\(\d{2}\) (9 )?\d{4}-\d{4}$/;
     return !pattern.test(control.value) ? { 'invalidPhone': true } : null;
   }
 
+  //NOTE - onSubmit
   onSubmit() {
     console.log("onSubmit");
     if (this.form.valid) {
       const formData = this.form.value;
       console.log(formData);
-      // Processe os dados do formulário aqui
     }
   }
 }

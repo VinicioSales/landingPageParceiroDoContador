@@ -17,13 +17,23 @@
     <div class="right-frame">
         <div class="form-container">
             <form [formGroup]="form" (ngSubmit)="onSubmit()">
-                <input type="text" placeholder="Nome" formControlName="nome" />
-                <input type="text" placeholder="Empresa" formControlName="empresa" />
-                <input type="email" placeholder="E-mail" formControlName="email" />
-                <input type="tel" placeholder="Telefone" formControlName="telefone" />
+                <div *ngIf="form.get('nome')?.hasError('hasNumber') && form.get('nome')?.touched" class="error-message">Formato do Nome inválido</div>
+                
+                <input  type="text" placeholder="Nome" formControlName="nome" />
+            
+                <input  type="text" placeholder="Empresa" formControlName="empresa" />
+            
+                <div *ngIf="form.get('email')?.hasError('email') && form.get('email')?.touched" class="error-message">Formato do E-mail inválido</div>
+                <input  type="email" placeholder="E-mail" formControlName="email" />
+            
+                <div *ngIf="form.get('telefone')?.hasError('invalidPhone') && form.get('telefone')?.touched" class="error-message">Formato do Telefone inválido</div>
+                <input  type="tel" placeholder="Telefone - (99) 9 9999-9999" formControlName="telefone" />
+            
                 <textarea id="textarea" placeholder="Descrição da solução" formControlName="descricao"></textarea>
-                    <button class="container-botao" type="submit">ENVIAR</button>
+            
+                <button class="container-botao" type="submit" [disabled]="!form.valid">ENVIAR</button>
             </form>
+            
             
         </div>
     </div>
