@@ -20,8 +20,8 @@
 }
 
 .linha {
-    /* background-color: yellow; */
     grid-area: cases;
+    margin-left: 95px;
 }
 
 .cases {
@@ -34,7 +34,6 @@
 }
 
 .case {
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     align-items: center;
