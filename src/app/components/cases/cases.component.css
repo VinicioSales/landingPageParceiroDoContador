@@ -36,10 +36,10 @@
 }
 
 .linha-case {
-    width: 100px; /* Defina o tamanho que deseja para a diagonal */
-    border-bottom: 3px solid red; /* Espessura e cor da linha */
-    transform: rotate(45deg); /* Inclinação da linha */
-    margin: 50px; /* Espaçamento para melhor visualização */
+    width: 100px;
+    border-bottom: 3px solid white; 
+    transform: rotate(45deg);
+    margin: 50px;
 }
 
 .circulo {
@@ -49,4 +49,13 @@
     background-color: #191C25;
     border: 1px solid #02CEDF;
     border-radius: 50%;
+    overflow: hidden;
+    position: relative; 
+}
+
+.image-inside-circle {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
