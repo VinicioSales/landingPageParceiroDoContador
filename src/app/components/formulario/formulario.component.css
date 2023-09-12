@@ -6,28 +6,27 @@
     background-color: #0F101E;
     margin: 0;
     padding: 0;
+
 }
 
 .left-frame {
+    flex: 1;
+}
+
+.texto {
     font-size: 1.94rem;
     font-family: var(--main-titulo-text);
     font-weight: 700;
     text-align: left;
     color: var(--main-text-color);
-    flex: 1;
-}
-
-.texto {
     margin-left: 158px;
+    line-height: 1.1;
 }
 
 .seta {
-    background-color: red;
     position: relative;
     margin-top: -100px;
     margin-left: 92px;
-    /* width: 781px; */
-    /* height: 180px; */
 }
 
 #seta1 {
@@ -41,8 +40,8 @@
     background-color: #1C1E2E;
     width: 402px;
     height: 480px;
-    padding: 20px;
-    /* flex: 1; */
+    padding: 24px 30px 24px 30px;
+    margin-right: 115px;
 }
 
 input, textarea {
@@ -52,8 +51,10 @@ input, textarea {
     width: 100%;
     margin-bottom: 15px;
     padding: 5px 0;
-    color: #FFF;
+    color: var(--main-text-color);
     outline: none;
+    font-size: 0.61rem;
+    padding-left: 3px;
 }
 
 textarea {
@@ -63,15 +64,7 @@ textarea {
     resize: none;
 }
 
-button {
-    background-color: #FFF;
-    color: #1C1E2E;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+#textarea {
+    margin-top: 45px;
+    width: 100%;
 }
