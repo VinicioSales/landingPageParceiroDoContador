@@ -1,26 +1,34 @@
 .container-formulario {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
     height: 100%;
     background-color: #0F101E;
     margin: 0;
     padding: 0;
-
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:    "texto fomrs"
+                            "texto forms"
+                            "_ forms";
 }
 
 .left-frame {
-    flex: 1;
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .texto {
-    font-size: 1.94rem;
+    font-size: 1.7rem;
     font-family: var(--main-titulo-text);
     font-weight: 700;
     text-align: left;
     color: var(--main-text-color);
     margin-left: 158px;
     line-height: 1.1;
+    max-width: 750px;
 }
 
 .seta {
@@ -36,12 +44,18 @@
 #seta2 {
     margin-top: 10px;
 }
+
+.right-frame{
+    grid-area: forms;
+    display: flex;
+    justify-content: center;
+}
+
 .form-container {
     background-color: #1C1E2E;
     width: 402px;
     height: 480px;
     padding: 24px 30px 24px 30px;
-    margin-right: 115px;
 }
 
 input, textarea {
