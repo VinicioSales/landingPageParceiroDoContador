@@ -121,3 +121,29 @@ textarea {
     margin-bottom: 10px;
 }
 
+@media screen and (max-width: 810px) {
+    .container-formulario {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:    "texto"
+                            "forms";
+    }
+
+    .left-frame {
+    }
+
+    .texto {
+        font-size: 1.9rem;
+        padding: 20px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .seta {
+        display: none;
+    }
+
+    .right-frame {
+        display: none;
+    }
+}

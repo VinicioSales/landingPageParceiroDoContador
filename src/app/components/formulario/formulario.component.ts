@@ -24,21 +24,18 @@ export class FormularioComponent implements OnInit{
 
   //NOTE - noNumberValidator
   noNumberValidator(control: AbstractControl): { [key: string]: boolean } | null {
-    console.log("noNumberValidator");
     const hasNumber = /\d/.test(control.value);
     return hasNumber ? { 'hasNumber': true } : null;
   }
 
   //NOTE - phoneValidator
   phoneValidator(control: AbstractControl): { [key: string]: boolean } | null {
-    console.log("phoneValidator");
     const pattern = /^\(\d{2}\) (9 )?\d{4}-\d{4}$/;
     return !pattern.test(control.value) ? { 'invalidPhone': true } : null;
   }
 
   //NOTE - onSubmit
   onSubmit() {
-    console.log("onSubmit");
     if (this.form.valid) {
       const formData = this.form.value;
       console.log(formData);
