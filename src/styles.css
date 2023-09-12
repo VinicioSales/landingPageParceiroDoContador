@@ -27,3 +27,14 @@ a {
     --main-titulo-text: 'Inter', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 4px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 1px;
+}
+
+

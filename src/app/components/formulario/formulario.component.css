@@ -56,6 +56,7 @@
     width: 402px;
     height: 480px;
     padding: 24px 30px 24px 30px;
+    overflow-y: auto;
 }
 
 input, textarea {
@@ -63,11 +64,11 @@ input, textarea {
     background-color: transparent;
     border-bottom: 1px solid #FFF;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding: 5px 0;
     color: var(--main-text-color);
     outline: none;
-    font-size: 0.61rem;
+    font-size: 0.8rem;
     padding-left: 3px;
 }
 
@@ -86,7 +87,6 @@ textarea {
 .botao {
     background-color: red;
     width: 100%;
-    /* display: flex; */
 }
 
 .container-botao {
@@ -116,9 +116,8 @@ textarea {
 
 .error-message {
     color: red;
+    position:sticky;
     font-size: 0.8rem;
-    margin-top: -10px;
-    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 810px) {
