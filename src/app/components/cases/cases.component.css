@@ -1,0 +1,52 @@
+.container-cases {
+    background: #151519;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30% 70%;
+    grid-template-areas:    "titulo"
+                            "cases";
+    color: var(--main-text-color);
+}
+
+.titulo {
+    grid-area: titulo;
+    justify-self: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.linha {
+    /* background-color: yellow; */
+    grid-area: cases;
+}
+
+.cases {
+    grid-area: cases;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.case {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.linha-case {
+    width: 100px; /* Defina o tamanho que deseja para a diagonal */
+    border-bottom: 3px solid red; /* Espessura e cor da linha */
+    transform: rotate(45deg); /* Inclinação da linha */
+    margin: 50px; /* Espaçamento para melhor visualização */
+}
+
+.circulo {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    background-color: #191C25;
+    border: 1px solid #02CEDF;
+    border-radius: 50%;
+}

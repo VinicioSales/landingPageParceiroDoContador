@@ -18,6 +18,7 @@ import { SolucoesComponent } from './components/solucoes/solucoes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormularioComponent } from './components/formulario/formulario.component'; 
 import { ModalSolucoesComponent } from './components/modal-solucoes/modal-solucoes.component';
+import { CasesComponent } from './components/cases/cases.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ModalSolucoesComponent } from './components/modal-solucoes/modal-soluco
     BotaoComponent,
     ModalSolucoesComponent,
     Botao2Component,
-    FormularioComponent
+    FormularioComponent,
+    CasesComponent
   ],
   imports: [
     BrowserModule,
