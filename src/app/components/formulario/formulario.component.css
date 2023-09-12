@@ -120,12 +120,12 @@ textarea {
     font-size: 0.8rem;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 820px) {
     .container-formulario {
         grid-template-columns: auto;
         grid-template-rows: 30% 70% ;
         grid-template-areas:    "texto"
-                            "forms";
+                                "forms";
     }
 
     .left-frame {
