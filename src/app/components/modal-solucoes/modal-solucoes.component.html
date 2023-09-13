@@ -1,0 +1,31 @@
+<div class="modal-wrapper" (click)="handleWrapperClick($event)">
+    <div class="container">
+        <div *ngFor="let produto of produtos" class="produto-item">
+            <div class="img">
+                <img [src]="produto.midia" alt="{{produto.descricao}}" class="">
+            </div>
+            <div class="produto-info">
+                {{produto.descricao}}
+            </div>
+            <div class="botao">
+                <app-botao
+                    texto="Ir para loja"
+                    fontSize="0.66rem"
+                    height="15px"
+                ></app-botao>
+            </div>
+        </div>
+        <div class="linha-divisoria"></div>
+        <div class="mais-produtos">
+            <div class="titulo">
+                Conheça mais soluções
+            </div>
+            <div class="botao">
+                <app-botao
+                    texto="Ir para loja"
+                    fontSize="1rem"
+                ></app-botao>
+            </div>
+        </div>
+    </div>
+</div>

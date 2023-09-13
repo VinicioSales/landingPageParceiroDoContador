@@ -1,6 +1,6 @@
 .container-solucoes {
     background:     #0F101E;
-    height: 685px;
+    height: 100%;
     color: var(--main-text-color);
     display: flex;
     flex-direction: column;
@@ -19,11 +19,26 @@
 .container-solucao {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-rows: 25vh 50vh 25vh;
     grid-template-areas:    "titulo titulo"
                             "midia descricao"
                             "botao botao";
-    width: 80%;
+    column-gap: 20px;
+}
+
+
+.container-carrossel {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.carrossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .titulo-solucao {
@@ -46,9 +61,8 @@
 }
 
 .midia {
-    width: 238px;
-    height: 238px;
-    margin: -40px;
+    width: 160px;
+    height: 160px;
 }
 
 
@@ -63,14 +77,12 @@
     font-size: 1.11rem;
     font-weight: 500;
     letter-spacing: 1.3px;
-    
 }
 
 .botao {
     grid-area: botao;
-    display: flex;
-    justify-content: center;
-    align-items: start;
+    width: 80%;
+    justify-self: center;
 }
 
 .linha {
@@ -78,5 +90,33 @@
     height: 276px;
     background: #FFF;
     
+}
+
+::ng-deep .carousel-control-prev,
+::ng-deep .carousel-control-next {
+    position: absolute;
+    top: 50%;  /* Centra os botões verticalmente */
+    transform: translateY(-50%);
+    z-index: 10;  /* Garante que os botões apareçam na frente do conteúdo do carrossel */
+}
+
+::ng-deep .carousel-control-prev {
+    left: -15%;  /* Desloca o botão para a esquerda */
+}
+
+::ng-deep .carousel-control-next {
+    right: -15%;  /* Desloca o botão para a direita */
+}
+
+.container-carrossel .carrossel {
+    z-index: 5;
+}
+
+::ng-deep .carousel-indicators {
+    margin-bottom: 95px;
+}
+
+.modal {
+    position: absolute;
 }
 

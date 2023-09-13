@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CarrosselComponent } from './carrossel.component';
+import { Botao2Component } from './botao2.component';
 
-describe('CarrosselComponent', () => {
-  let component: CarrosselComponent;
-  let fixture: ComponentFixture<CarrosselComponent>;
+describe('Botao2Component', () => {
+  let component: Botao2Component;
+  let fixture: ComponentFixture<Botao2Component>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CarrosselComponent]
+      declarations: [Botao2Component]
     });
-    fixture = TestBed.createComponent(CarrosselComponent);
+    fixture = TestBed.createComponent(Botao2Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,14 +1,40 @@
 <div class="container-solucoes">
+	<app-modal-solucoes
+		*ngIf="showModal"
+		(closeModal)="closeModal()"
+		[tipoSolucao]="tipoSolucao"
+	></app-modal-solucoes>
 	<div class="titulo-solucoes">SOLUÇÕES</div>
-	<div class="titulo-solucao">{{ tituloSolucao }}</div>
-	<div class="container-solucao">
-		<div class="midias">
-			<img class="midia" src="{{ imagem1 }}" alt="Engrenagem" />
-			<img class="midia" src="{{ imagem2 }}" alt="Cerebro" />
-		</div>
-		<div class="descricao">{{ descricao }}</div>
-		<div class="botao">
-			<app-botao [texto]="'Saiba mais'" [width]="'1041px'"></app-botao>
-		</div>
+	<div class="container-carrossel">
+		<ngb-carousel>
+			<ng-template ngbSlide *ngFor="let solucao of solucoes">
+				<div class="carrossel">
+					<div class="container-solucao">
+						<div class="titulo-solucao">
+							{{ solucao.tituloSolucao }}
+						</div>
+						<div class="midias">
+							<img
+								class="midia"
+								src="{{ solucao.imagem1 }}"
+								alt=""
+							/>
+							<img
+								class="midia"
+								src="{{ solucao.imagem2 }}"
+								alt=""
+							/>
+						</div>
+						<div class="descricao">{{ solucao.descricao }}</div>
+						<div class="botao">
+							<app-botao
+								[texto]="'Saiba mais'"
+								(click)="openModal(solucao.tituloSolucao)"
+							></app-botao>
+						</div>
+					</div>
+				</div>
+			</ng-template>
+		</ngb-carousel>
 	</div>
 </div>
