@@ -108,7 +108,7 @@
 
 @media screen and (max-width: 820px) {
     .titulo {
-        width: 80%;
+        text-align: center;
         word-wrap: break-word;
         grid-area: titulo;
         justify-self: none;
@@ -118,7 +118,10 @@
     }
 
     .cases {
+        /* background-color: red; */
         flex-direction: column;
+        gap: 50px;
+        padding: 0;
     }
 
     .linha {
