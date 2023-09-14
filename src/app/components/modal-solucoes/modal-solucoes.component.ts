@@ -26,6 +26,10 @@ export class ModalSolucoesComponent {
 	constructor(private produtosService: ProdutosService) {}
 
 	ngOnInit(): void {
+		//REVIEW - Verificar como fazer um De/Para mais consistente
+
+		this.tipoSolucao = this.normalizeString(this.tipoSolucao);
+
 		this.produtosService.getProdutos(this.tipoSolucao).subscribe(
 			(data) => {
 				console.log(data);
@@ -42,6 +46,40 @@ export class ModalSolucoesComponent {
 				console.error("Erro ao buscar produtos:", error);
 			}
 		);
+	}
+
+	normalizeString(str: string): string {
+		const map: { [key: string]: string } = {
+			á: "a",
+			à: "a",
+			ã: "a",
+			â: "a",
+			é: "e",
+			ê: "e",
+			í: "i",
+			ó: "o",
+			ô: "o",
+			õ: "o",
+			ú: "u",
+			Á: "A",
+			À: "A",
+			Ã: "A",
+			Â: "A",
+			É: "E",
+			Ê: "E",
+			Í: "I",
+			Ó: "O",
+			Ô: "O",
+			Õ: "O",
+			Ú: "U",
+			ç: "c",
+			Ç: "C",
+		};
+
+		return str
+			.replace(/[áàãâéêíóôõúÁÀÃÂÉÊÍÓÔÕÚçÇ]/g, (match) => map[match])
+			.toLowerCase()
+			.replace(/\s+/g, "_");
 	}
 
 	handleWrapperClick(event: MouseEvent) {
