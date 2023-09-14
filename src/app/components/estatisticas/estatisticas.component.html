@@ -1,0 +1,17 @@
+<div class="container-estatisticas">
+    <div class="titulo">
+        <div class="titulo-texto">{{ estatisticas.titulo }}</div>
+        <div class="sub-titulo-texto">{{ estatisticas.subtitulo }}</div>
+        <div class="linha-titulo"></div>
+    </div>
+    <div class="estatistica-1">
+        <img src="{{ estatisticas.dados[0].imagem }}" alt="">
+        <div class="estatistica-1-dados">{{ estatisticas.dados[0].texto }}</div>
+        <div class="linha-estatistica"></div>
+    </div>
+    <div class="estatistica-2">
+        <div class="estatistica-2-dados">{{ estatisticas.dados[1].texto }}</div>
+        <img src="{{ estatisticas.dados[1].imagem }}" alt="">
+        <div class="seta-estatistica"></div>
+    </div>
+</div>

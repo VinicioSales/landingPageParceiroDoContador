@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormularioComponent } from './components/formulario/formulario.component'; 
 import { ModalSolucoesComponent } from './components/modal-solucoes/modal-solucoes.component';
 import { CasesComponent } from './components/cases/cases.component';
+import { EstatisticasComponent } from './components/estatisticas/estatisticas.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CasesComponent } from './components/cases/cases.component';
     ModalSolucoesComponent,
     Botao2Component,
     FormularioComponent,
-    CasesComponent
+    CasesComponent,
+    EstatisticasComponent
   ],
   imports: [
     BrowserModule,
