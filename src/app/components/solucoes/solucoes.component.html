@@ -8,32 +8,34 @@
 	<div class="container-carrossel">
 		<ngb-carousel>
 			<ng-template ngbSlide *ngFor="let solucao of solucoes">
-				<div class="carrossel">
-					<div class="container-solucao">
-						<div class="titulo-solucao">
-							{{ solucao.tituloSolucao }}
-						</div>
-						<div class="midias">
-							<img
-								class="midia"
-								src="{{ solucao.imagem1 }}"
-								alt=""
-							/>
-							<img
-								class="midia"
-								src="{{ solucao.imagem2 }}"
-								alt=""
-							/>
-						</div>
-						<div class="descricao">{{ solucao.descricao }}</div>
-						<div class="botao">
-							<app-botao
-								[texto]="'Saiba mais'"
-								(click)="openModal(solucao.tituloSolucao)"
-							></app-botao>
+				<section id="solucoes">
+					<div class="carrossel">
+						<div class="container-solucao">
+							<div class="titulo-solucao">
+								{{ solucao.tituloSolucao }}
+							</div>
+							<div class="midias">
+								<img
+									class="midia"
+									src="{{ solucao.imagem1 }}"
+									alt=""
+								/>
+								<img
+									class="midia"
+									src="{{ solucao.imagem2 }}"
+									alt=""
+								/>
+							</div>
+							<div class="descricao">{{ solucao.descricao }}</div>
+							<div class="botao">
+								<app-botao
+									[texto]="'Saiba mais'"
+									(click)="openModal(solucao.tituloSolucao)"
+								></app-botao>
+							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 			</ng-template>
 		</ngb-carousel>
 	</div>
