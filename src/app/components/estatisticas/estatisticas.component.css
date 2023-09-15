@@ -12,7 +12,7 @@
 }
 
 .titulo {
-    background-color: green;
+    /* background-color: green; */
     grid-area: titulo;
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@
 }
 
 .linha-titulo .l2 {
-    width: 100%;
+    width: 62%;
     height: 3px;
     background: var(--cor-usb);
     display: flex;
