@@ -16,7 +16,7 @@
     grid-area: titulo;
     display: flex;
     flex-direction: column;
-    margin-left: 170px;
+    margin-left: 120px;
     justify-content: center;
 }
 
@@ -47,6 +47,7 @@
     height: 70px;
     background: var(--cor-usb);
     transform: rotate(45deg);
+    position: relative;
 }
 
 .linha-titulo .l2 {
@@ -55,6 +56,19 @@
     background: var(--cor-usb);
     display: flex;
     justify-content: start;
+    margin-top: 9px;
+    margin-left: 22.5px;
+}
+
+.circulo {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: var(--cor-usb);
+    display: flex;
+    margin-top: 4px;
+    flex-shrink: 0;
+    
 }
 
 .estatistica-1 {
