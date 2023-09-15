@@ -1,0 +1,37 @@
+.container-estatisticas {
+    background: #0F0F0F;
+    height: 100%;
+    color: var(--main-text-color);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:    "titulo"
+                            "dado-1"
+                            "dado-2";
+
+}
+
+.titulo {
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    margin-left: 170px;
+    justify-content: center;
+}
+
+.titulo .titulo-texto {
+    font-size: 3.8rem;
+    font-family: var(--main-titulo-text);
+    font-weight: 700;
+    letter-spacing: 6.65px;
+    line-height: 60px;
+    
+}
+
+.titulo .sub-titulo-texto {
+    font-family: var(--main-titulo-text);
+    font-size: 1.1;
+    letter-spacing: 1.9px;
+    font-weight: 300;
+    
+}
