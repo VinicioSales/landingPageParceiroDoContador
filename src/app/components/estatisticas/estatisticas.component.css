@@ -8,7 +8,7 @@
     grid-template-rows: auto auto auto;
     grid-template-areas:    "titulo titulo space1"
                             "space2 dado-1 dado-1"
-                            "dado-2 dado-2 space3";
+                            "dado-2 dado-2 dado-2";
 
 }
 
@@ -71,12 +71,10 @@
 }
 
 .estatistica-1 {
-    /* background-color: yellow; */
     grid-area: dado-1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-right: 65px; */
 }
 
 .estatistica-1 .dados {
@@ -86,7 +84,7 @@
     margin-right: 30px;
 }
 
-.estatistica-1 .estatistica-1-texto {
+.texto {
     font-size: 1.1rem;
     font-weight: 300;
     letter-spacing: 1.9px;
@@ -94,7 +92,7 @@
     padding-left: 50px;
 }
 
-.estatistica-1 .estatistica-1-midia {
+.midia {
     height: 178px;
     width: 178px;
 }
@@ -116,4 +114,12 @@
 .estatistica-2 {
     /* background-color: red; */
     grid-area: dado-2;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.estatistica-2 .texto {
+    padding-left: 0;
 }
