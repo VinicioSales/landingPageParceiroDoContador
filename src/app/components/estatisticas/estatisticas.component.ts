@@ -12,11 +12,11 @@ export class EstatisticasComponent {
     dados: [
         {
             texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            imagem: 'assets/img/dados2.png'
+            midia: 'assets/img/dados2.png'
         },
         {
             texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            imagem: 'assets/img/dados2.png'
+            midia: 'assets/img/dados2.png'
         }
     ]
 }
