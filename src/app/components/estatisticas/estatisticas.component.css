@@ -70,7 +70,7 @@
 }
 
 .estatistica-1 {
-    width: 80%;
+    /* width: 80%; */
     grid-area: dado-1;
     display: flex;
     flex-direction: column;
@@ -157,6 +157,7 @@
         text-align: center;
         margin-left: 10px;
         margin-right: 10px;
+        margin-bottom: 20px;
     }
 
     .sub-titulo-texto {
@@ -167,11 +168,27 @@
         display: none;
     }
 
-    .estatistica-1 {
+    .dados {
+        flex-direction: column;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .texto {
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    .linha-estatistica-1,
+    .linha-estatistica-2 {
         display: none;
     }
 
     .estatistica-2 {
-        display: none;
+        /* display: none; */
+        margin: 0;
+        justify-self: center;
+        width: 100%;
     }
 }
