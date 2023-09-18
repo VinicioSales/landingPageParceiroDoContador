@@ -1,6 +1,6 @@
 .container-estatisticas {
     background: #0F0F0F;
-    height: 100%;
+    height: 120%;
     color: var(--main-text-color);
     font-family: var(--main-titulo-text);
     display: grid;
