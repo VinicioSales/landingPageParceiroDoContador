@@ -110,6 +110,7 @@
     .container-cases {
         height: 120%;
         padding-bottom: 80px;
+        margin-bottom: -5px;
     }
 
     .titulo {

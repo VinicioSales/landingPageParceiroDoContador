@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     color: var(--main-text-color);
-    
 }
 
 .grid-sobre {
@@ -100,6 +99,7 @@ h2 {
 @media screen and (max-width: 820px) {
     .sobre-container {
         height: 130%;
+        margin-bottom: -5px;
     }
 
     .texto-introducao {
