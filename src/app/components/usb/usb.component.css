@@ -1,5 +1,4 @@
 .container-usb {
-    /* margin-top: 161px; */
     display: flex;
     margin-left: 85.4px;
     top: 0;
@@ -14,10 +13,42 @@
     display: flex;
 }
 
+.linha-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    margin-left: 1px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;   /* metade da largura do triângulo */
+    border-right: 10px solid transparent;  /* metade da largura do triângulo */
+    border-bottom: 20px solid var(--cor-usb);        /* altura do triângulo */
+}
+
+
+.linha {
+    height: 100%;
+    width: 3px;
+    background: var(--cor-usb);
+    flex-shrink: 1;
+}
+
+.bola {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--cor-usb);
+}
+
 .braco-1 {
     display: flex;
     flex-direction: column;
-    margin-left: -13px;
+    margin-left: -11px;
     margin-top: 185px;
 }
 
@@ -39,12 +70,31 @@ svg path {
 
 @media screen and (max-width: 820px) {
     .container-usb {
-        /* display: none; */
         margin-left: -90px;
-        transform: scale(0.5);
     }
 
-    .usb {
-        padding-top: 410px;
+    .linha-principal {
+        width: 50%;
+        margin-left: 100px;
+    }
+
+    .linha {
+        width: 2px;
+    }
+
+    .braco-1,
+    .linha-1 {
+        display: none;
+    }
+
+    .triangle {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 10px solid var(--cor-usb);
+    }
+
+    .bola {
+        height: 7px;
+        width: 7px;
     }
 }

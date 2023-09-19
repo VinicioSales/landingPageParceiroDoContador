@@ -26,7 +26,7 @@
     font-weight: 700;
     text-align: left;
     color: var(--main-text-color);
-    margin-left: 158px;
+    margin-left: 180px;
     line-height: 1.1;
     max-width: 750px;
 }
@@ -144,9 +144,21 @@ textarea {
 
     .right-frame {
         align-self: start;
+        margin-top: 55px;
     }
 
     .form-container {
         width: 85%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container-formulario {
+        height: 130%;
+    }
+
+    .right-frame {
+        align-self: start;
+        margin-top: 80px;
     }
 }

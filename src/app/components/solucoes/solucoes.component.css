@@ -10,10 +10,12 @@
 
 .titulo-solucoes {
     display: flex;
-    justify-content: center;
+    justify-self: center;
+    align-self: center;
     font-family: var(--main-titulo-text);
     font-weight: 600;
     font-size: 1.66rem;
+    padding-top: 50px;
 }
 
 .container-solucao {
@@ -49,6 +51,7 @@
     font-size: 1.11rem;
     font-weight: 700;
     align-items: end;
+
 }
 
 .midias {
@@ -118,5 +121,31 @@
 
 .modal {
     position: absolute;
+}
+
+@media screen and (max-width: 820px) {
+    .container-solucao {
+        grid-template-columns: auto;
+        grid-template-rows: 20vh 20vh 25vh 20vh;
+        grid-template-areas:    "titulo"
+                                "midia"
+                                "descricao"
+                                "botao";
+    }
+
+    .descricao {
+        font-size: 0.8rem;
+        align-items: start;
+    }
+
+    .midias {
+        padding: 0;
+    }
+
+    .midia {
+        width: 80px;
+        height: 80px;
+        
+    }
 }
 
