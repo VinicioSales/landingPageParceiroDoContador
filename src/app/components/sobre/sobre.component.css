@@ -98,6 +98,11 @@ h2 {
 }
 
 @media screen and (max-width: 820px) {
+    .sobre-container {
+        /* margin-bottom: 100px; */
+        height: 130%;
+    }
+
     .texto-introducao {
         width: 80%;
         font-size: 0.8rem;
@@ -124,6 +129,11 @@ h2 {
     .bola-separadora {
         display: block;
         margin-top: 30px;
+    }
+
+    .valores-container {
+        flex-direction: row;
+        margin-left: 0;
     }
 
 }
