@@ -6,6 +6,7 @@
     grid-template-rows: auto auto;
     grid-template-areas:    "titulo titulo titulo"
                             "coluna-1  coluna-2 coluna-3";
+    padding: 70px 0 70px 0;
 }
 
 .titulo {
