@@ -144,9 +144,21 @@ textarea {
 
     .right-frame {
         align-self: start;
+        margin-top: 55px;
     }
 
     .form-container {
         width: 85%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container-formulario {
+        height: 130%;
+    }
+
+    .right-frame {
+        align-self: start;
+        margin-top: 80px;
     }
 }
