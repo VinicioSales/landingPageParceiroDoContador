@@ -29,10 +29,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    width: 400px
+}
+
+.conteudo  {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+    width: 300px;
 }
 
 .telefone {
+    /* background-color: blue; */
     grid-area: telefone;
 }
 
@@ -46,4 +57,10 @@
 
 .instagram {
     grid-area: instagram;
+}
+
+.seta {
+    /* background-color: green; */
+    /* justify-self: end; */
+    /* margin-right: -80px; */
 }
