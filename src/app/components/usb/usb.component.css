@@ -1,3 +1,36 @@
+@keyframes slideFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .container-usb {
     display: flex;
     margin-left: 85.4px;
@@ -20,6 +53,7 @@
     align-items: center;
     flex-shrink: 1;
     margin-left: 1px;
+    animation: slideFromBottom 0.9s ease-out;
 }
 
 .triangle {
@@ -50,6 +84,7 @@
     flex-direction: column;
     margin-left: -11px;
     margin-top: 185px;
+    animation: slideFromLeft 1.5s ease-out;
 }
 
 .linha-1 {
@@ -60,8 +95,17 @@
     margin-bottom: 3px;
 }
 
-.linha-diagonal-1 {
+.bola-braco {
+    /* animation: slideFromRight 0.7s ease-out; */
+}
+
+.linha-braco {
+    /* animation: slideFromRight 0.8s ease-out; */
+}
+
+.linha-diagonal-braco {
     margin-top: -5px;
+    /* animation: slideFromRight 0.9s ease-out; */
 }
 
 svg path {
@@ -98,3 +142,6 @@ svg path {
         width: 7px;
     }
 }
+
+
+
