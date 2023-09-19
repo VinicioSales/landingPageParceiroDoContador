@@ -1,5 +1,4 @@
 .container-usb {
-    /* margin-top: 161px; */
     display: flex;
     margin-left: 85.4px;
     top: 0;
@@ -12,6 +11,38 @@
 .usb {
     padding-top: 161px;
     display: flex;
+}
+
+.linha-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;   /* metade da largura do triângulo */
+    border-right: 10px solid transparent;  /* metade da largura do triângulo */
+    border-bottom: 20px solid var(--cor-usb);        /* altura do triângulo */
+}
+
+
+.linha {
+    height: 100%;
+    width: 3px;
+    background: var(--cor-usb);
+    flex-shrink: 1;
+}
+
+.bola {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--cor-usb);
 }
 
 .braco-1 {
