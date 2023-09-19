@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter, Input } from "@angular/core";
-import { ProdutosService } from "../../services/produtos.service";
+import { ProdutosService } from "../../services/produtos/produtos.service";
 
 @Component({
 	selector: "app-modal-solucoes",

@@ -1,5 +1,5 @@
 import { Observable } from "rxjs";
-import { BACK_URL } from "../config";
+import { BACK_URL } from "../../config";
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 
