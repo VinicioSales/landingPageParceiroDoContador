@@ -10,10 +10,12 @@
 
 .titulo-solucoes {
     display: flex;
-    justify-content: center;
+    justify-self: center;
+    align-self: center;
     font-family: var(--main-titulo-text);
     font-weight: 600;
     font-size: 1.66rem;
+    padding-top: 50px;
 }
 
 .container-solucao {
@@ -49,6 +51,7 @@
     font-size: 1.11rem;
     font-weight: 700;
     align-items: end;
+
 }
 
 .midias {
