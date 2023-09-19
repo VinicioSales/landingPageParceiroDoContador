@@ -36,26 +36,32 @@
 .coluna-3 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: end; */
 }
 
 .coluna-1 {
     grid-area: coluna-1;
+    align-items: end;
+    margin-left: -100px;
+    width: 100%;
 }
 
 .coluna-2 {
     grid-area: coluna-2;
     gap: 95px;
+    align-items: center;
 }
 
 .coluna-3 {
     grid-area: coluna-3;
-    align-items: center;
+    align-items: start;
 
 }
 
 .item-1 {
     margin-bottom: -70px;
+    display: flex;
+    flex-direction: column;
 }
 
 .linha-1 {
@@ -92,14 +98,11 @@
 }
 
 .item-3-1 {
-    margin-bottom: -70px;
-}
-
-.item-3-1 {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-right: -50px;
+    margin-bottom: -70px;
 }
 
 .linha-3-1 {
@@ -121,4 +124,11 @@
     position: relative;
     margin-bottom: -15px;
     margin-left: 117px;
+}
+
+.bola {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--cor-usb);
 }
