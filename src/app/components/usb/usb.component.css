@@ -53,7 +53,7 @@
     align-items: center;
     flex-shrink: 1;
     margin-left: 1px;
-    animation: slideFromBottom 0.9s ease-out;
+    animation: slideFromBottom 1.2s ease-out;
 }
 
 .triangle {
@@ -84,7 +84,7 @@
     flex-direction: column;
     margin-left: -11px;
     margin-top: 185px;
-    animation: slideFromLeft 1.5s ease-out;
+    animation: slideFromLeft 1.9s ease-out;
 }
 
 .linha-1 {
@@ -95,17 +95,8 @@
     margin-bottom: 3px;
 }
 
-.bola-braco {
-    /* animation: slideFromRight 0.7s ease-out; */
-}
-
-.linha-braco {
-    /* animation: slideFromRight 0.8s ease-out; */
-}
-
 .linha-diagonal-braco {
     margin-top: -5px;
-    /* animation: slideFromRight 0.9s ease-out; */
 }
 
 svg path {
