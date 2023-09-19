@@ -20,6 +20,7 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { ModalSolucoesComponent } from './components/modal-solucoes/modal-solucoes.component';
 import { CasesComponent } from './components/cases/cases.component';
 import { EstatisticasComponent } from './components/estatisticas/estatisticas.component';
+import { ParceirosComponent } from './components/parceiros/parceiros.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { EstatisticasComponent } from './components/estatisticas/estatisticas.co
     Botao2Component,
     FormularioComponent,
     CasesComponent,
-    EstatisticasComponent
+    EstatisticasComponent,
+    ParceirosComponent
   ],
   imports: [
     BrowserModule,
