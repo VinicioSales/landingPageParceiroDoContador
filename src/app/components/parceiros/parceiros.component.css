@@ -33,6 +33,7 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
+    z-index: 10;
 }
 
 .coluna-1,
@@ -64,6 +65,8 @@
     display: flex;
     flex-direction: column;
 }
+
+
 
 .linha-1 {
     height: 180px;
