@@ -11,12 +11,13 @@
 
 .titulo {
     grid-area: titulo;
-    justify-self: center;
-    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.6rem;
     font-weight: 600;
     font-family: var(--main-titulo-text);
-    
+    padding-top: 30px;
 }
 
 .linha {
