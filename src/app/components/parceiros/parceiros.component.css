@@ -172,25 +172,26 @@
     .coluna-3 {
         align-items: start;
         justify-content: space-between;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
         gap: 0;
-        height: 250px;
+        height: 180px;
     }
 
     .coluna-1 {
         grid-area: linha-1;
-        /* margin-bottom: 50px; */
     }
 
     .coluna-2 {
         grid-area: linha-2;
-        /* margin-bottom: 50px; */
-        /* display: none; */
     }
 
     .coluna-3 {
-        /* display: none; */
         grid-area: linha-3;
+    }
+
+    .circulo {
+        width: 90px;
+        height: 90px;
     }
 }
