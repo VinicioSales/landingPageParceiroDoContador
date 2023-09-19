@@ -25,5 +25,20 @@ a {
     --second-text-color: #0F101E;
     --third-main-color: #f9803a;
     --main-titulo-text: 'Inter', sans-serif;
+    --breakpoint-mobile: 820px;
+    --cor-usb: #FFF
 }
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 2px;
+    background-color: #adadad;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 1px;
+}
+
 
