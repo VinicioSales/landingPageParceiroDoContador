@@ -20,12 +20,12 @@
 				<div class="linha-case"></div>
 				<div class="circulo">
 					<img
-						[src]="imgCase1"
+						[src]="casesData[0].media"
 						alt="Foto do cliente"
 						class="image-inside-circle"
 					/>
 				</div>
-				<div class="texto">{{ textoCase1 }}</div>
+				<div class="texto">{{ casesData[0].mensagem }}</div>
 			</div>
 		</div>
 		<div class="case">
@@ -33,12 +33,12 @@
 				<div class="linha-case"></div>
 				<div class="circulo">
 					<img
-						[src]="imgCase2"
+						[src]="casesData[1].media"
 						alt="Foto do cliente"
 						class="image-inside-circle"
 					/>
 				</div>
-				<div class="texto">{{ textoCase1 }}</div>
+				<div class="texto">{{ casesData[1].mensagem }}</div>
 			</div>
 		</div>
 		<div class="case">
@@ -48,14 +48,14 @@
 					<div class="linha-case"></div>
 					<div class="circulo">
 						<img
-							[src]="imgCase3"
+							[src]="casesData[2].media"
 							alt="Foto do cliente"
 							class="image-inside-circle"
 						/>
 					</div>
 				</div>
 			</div>
-			<div class="texto">{{ textoCase1 }}</div>
+			<div class="texto">{{ casesData[2].mensagem }}</div>
 		</div>
 	</div>
 </div>

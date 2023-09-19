@@ -3,18 +3,17 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
+import { BACK_URL } from "../../config"
 
 @Injectable({
 	providedIn: "root",
 })
 export class ApiService {
-	private BASE_URL = "http://localhost:3000"; // Altere para a URL do seu backend se for diferente
 
 	constructor(private http: HttpClient) {}
 
 	getCases(): Observable<any> {
-		return this.http.get(`${this.BASE_URL}/cases`);
+		return this.http.get(`${BACK_URL}/cases`);
 	}
 
-	// Você pode adicionar mais métodos aqui conforme necessário, por exemplo, para buscar parceiros e estatísticas.
 }
