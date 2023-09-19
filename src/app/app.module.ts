@@ -21,6 +21,7 @@ import { ModalSolucoesComponent } from './components/modal-solucoes/modal-soluco
 import { CasesComponent } from './components/cases/cases.component';
 import { EstatisticasComponent } from './components/estatisticas/estatisticas.component';
 import { ParceirosComponent } from './components/parceiros/parceiros.component';
+import { ContatoComponent } from './components/contato/contato.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ParceirosComponent } from './components/parceiros/parceiros.component';
     FormularioComponent,
     CasesComponent,
     EstatisticasComponent,
-    ParceirosComponent
+    ParceirosComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,

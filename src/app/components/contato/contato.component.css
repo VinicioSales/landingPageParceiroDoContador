@@ -1,0 +1,8 @@
+.container-contato {
+    height: 100%;
+    background-color: #0D0D0D;
+    color: var(--main-text-color);
+    
+    align-items: center;
+    /* justify-content: center; */
+}
