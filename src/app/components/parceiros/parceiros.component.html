@@ -1,46 +1,95 @@
 <div class="container-parceiros">
-    <div class="titulo">
-        Conheça nossos parceiros
-    </div>
-    <div class="coluna-1">
-        <div class="item-1">
-            <div class="circulo"></div>
-            <div class="linha-1"></div>
-        </div>
-        <div class="item-2">
-            <div class="bola"></div>
-            <div class="linha-2"></div>
-            <div class="circulo"></div>
-        </div>
-        <div class="item-3">
-            <div class="linha-3"></div>
-            <div class="circulo"></div>
-        </div>
-    </div>
-    <div class="coluna-2">
-        <div class="item-2-1">
-            <div class="circulo"></div>
-        </div>
-        <div class="item-2-2">
-            <div class="circulo"></div>
-        </div>
-        <div class="item-2-3">
-            <div class="circulo"></div>
-        </div>
-    </div>
-    <div class="coluna-3">
-        <div class="item-3-1">
-            <div class="circulo"></div>
-            <div class="linha-3-1"></div>
-        </div>
-        <div class="item-2">
-            <div class="circulo"></div>
-            <div class="linha-2"></div>
-            <div class="bola"></div>
-        </div>
-        <div class="item-3-3">
-            <div class="linha-3-3"></div>
-            <div class="circulo"></div>
-        </div>
-    </div>
+	<div class="titulo">Conheça nossos parceiros</div>
+
+	<!-- Coluna 1 -->
+	<div class="coluna-1">
+		<div class="item-1">
+			<a [href]="partners[0]?.link" target="_blank">
+				<div
+					class="circulo"
+					[style.backgroundImage]="'url(' + partners[0]?.media + ')'"
+				></div>
+			</a>
+			<div class="linha-1"></div>
+		</div>
+		<div class="item-2">
+			<a [href]="partners[1]?.link" target="_blank">
+				<div
+					class="circulo"
+					[style.backgroundImage]="'url(' + partners[1]?.media + ')'"
+				></div>
+			</a>
+			<div class="linha-2"></div>
+			<div class="bola"></div>
+		</div>
+		<div class="item-3">
+			<div class="linha-3"></div>
+			<a [href]="partners[2]?.link" target="_blank">
+				<div
+					class="circulo"
+					[style.backgroundImage]="'url(' + partners[2]?.media + ')'"
+				></div>
+			</a>
+		</div>
+	</div>
+
+	<!-- Coluna 2 -->
+	<div class="coluna-2">
+		<div class="item-2-1">
+			<a [href]="partners[3]?.link" target="_blank">
+				<div
+					class="circulo"
+					[style.backgroundImage]="'url(' + partners[3]?.media + ')'"
+				></div>
+			</a>
+		</div>
+		<div class="item-2-2">
+			<a [href]="partners[4]?.link" target="_blank">
+				<div
+					class="circulo"
+					[style.backgroundImage]="'url(' + partners[4]?.media + ')'"
+				></div>
+			</a>
+		</div>
+		<div class="item-2-3">
+			<a [href]="partners[5]?.link" target="_blank">
+				<div
+					class="circulo"
+					[style.backgroundImage]="'url(' + partners[5]?.media + ')'"
+				></div>
+			</a>
+		</div>
+	</div>
+
+	<!-- Coluna 3 -->
+	<div class="coluna-3">
+		<div class="item-3-1">
+			<a [href]="partners[6]?.link" target="_blank">
+				<div
+					class="circulo"
+					[style.backgroundImage]="'url(' + partners[6]?.media + ')'"
+				></div>
+			</a>
+			<div class="linha-3-1"></div>
+		</div>
+		<div class="item-2">
+			<a [href]="partners[7]?.link" target="_blank">
+				<div
+					class="circulo"
+					[style.backgroundImage]="'url(' + partners[7]?.media + ')'"
+				></div>
+			</a>
+			<div class="linha-2"></div>
+			<div class="bola"></div>
+		</div>
+		<div class="item-3-3">
+			<div class="linha-3-3"></div>
+			<a [href]="partners[8]?.link" target="_blank">
+				<div
+					class="circulo"
+					[style.backgroundImage]="'url(' + partners[8]?.media + ')'"
+				></div>
+			</a>
+		</div>
+	</div>
 </div>
