@@ -5,6 +5,7 @@
     width: 100%;
     font-size: 0.72rem;
     position: fixed;
+    background-color: #015C54;
     /* backdrop-filter: blur(10px); */
 }
 
@@ -38,7 +39,8 @@
 }
 
 a {
-    color: var(--main-text-color);
+    /* color: var(--main-text-color); */
+    color: white;
 }
 
 .header-mobile-container {

@@ -8,23 +8,25 @@ import { ApiService } from '../../services/cases/cases.service';
 	styleUrls: ["./cases.component.css"],
 })
 export class CasesComponent implements OnInit {
-	// textoCase1: string =
-	// 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ";
-	// imgCase1: string = "assets/img/dados.png";
-	// imgCase2: string = "assets/img/dados.png";
-	// imgCase3: string = "assets/img/dados.png";
+	textoCase1: string =
+		"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ";
+	imgCase1: string = "assets/img/dados.png";
+	imgCase2: string = "assets/img/dados.png";
+	imgCase3: string = "assets/img/dados.png";
 
-  // cases = {
-  //   a: "haha"
-  // }
-  casesData: any[] = [];
+  casesData = [
+    {media: "assets/img/dados.png", mensagem: "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+    {media: "assets/img/dados.png", mensagem: "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+    {media: "assets/img/dados.png", mensagem: "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+  ]
+  // casesData: any[] = [];
 
-  constructor(private apiService: ApiService) { }
+  // constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
-    this.apiService.getCases().subscribe(data => {
-      this.casesData = data;
-      console.log(this.casesData);
-    });
+    // this.apiService.getCases().subscribe(data => {
+    //   this.casesData = data;
+    //   console.log(this.casesData);
+    // });
   }
 }

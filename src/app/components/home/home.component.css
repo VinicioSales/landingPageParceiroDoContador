@@ -41,7 +41,7 @@
 
 .home-container {
     height: 603px;
-    background: #2B304D;
+    background: #B1E239;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,6 +85,7 @@
     justify-content: center;
     letter-spacing: 0.845px;
     color: var(--main-text-color);
+    animation: fadeIn 4s ;
     
 
 }
