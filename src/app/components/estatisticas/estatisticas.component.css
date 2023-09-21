@@ -1,7 +1,8 @@
 .container-estatisticas {
-    background: #0F0F0F;
+    background: #015C54;
     height: 120%;
-    color: var(--main-text-color);
+    color: var(--third-text-color);
+    /* color: #B1E239; */
     font-family: var(--main-titulo-text);
     display: grid;
     grid-template-columns: auto auto auto;
@@ -14,6 +15,7 @@
 
 .titulo {
     grid-area: titulo;
+    color: #B1E239;
     display: flex;
     flex-direction: column;
     margin-left: 120px;
@@ -25,13 +27,15 @@
     font-weight: 700;
     letter-spacing: 6.65px;
     line-height: 60px;
-    
+    margin-left: 30px;
 }
 
 .titulo .sub-titulo-texto {
     font-size: 1.1;
     letter-spacing: 1.9px;
     font-weight: 300;
+    color: #b6c986;
+    margin-left: 30px;
     
 }
 
