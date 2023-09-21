@@ -1,9 +1,10 @@
 .sobre-container {
-    background: #0F101E;
+    /* background: #015C54; */
+    background: linear-gradient(#015C54, #00484c);
     height: 792px;
     display: flex;
     justify-content: center;
-    color: var(--main-text-color);
+    color: var(--third-text-color);
 }
 
 .grid-sobre {
@@ -86,7 +87,7 @@
 }
 
 h2 {
-    color: var(--main-text-color);
+    color: var(--third-text-color);
     opacity: 80%;
     font-weight: 600;
     margin-bottom: 1rem;

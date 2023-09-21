@@ -1,7 +1,8 @@
 .container-solucoes {
-    background:     #0F101E;
+    /* background:     #00564f; */
+    background: linear-gradient(#00484c, #003a49);
     height: 100%;
-    color: var(--main-text-color);
+    color: var(--third-text-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
