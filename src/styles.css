@@ -28,7 +28,8 @@ a {
     --third-main-color: #B1E239;
     --main-titulo-text: 'Inter', sans-serif;
     --breakpoint-mobile: 820px;
-    --cor-usb: #FFF
+    --cor-usb: #FFF;
+    --cor-usb-2: #B1E239;
 }
 
 ::-webkit-scrollbar {
