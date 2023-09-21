@@ -1,3 +1,12 @@
+@keyframes slideFromLeftHard {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .sobre-container {
     /* background: #015C54; */
     background: linear-gradient(#015C54, #00484c);
@@ -52,6 +61,17 @@
     display: flex;
     align-items: center;
     margin-bottom: -11px;
+    animation: slideFromLeftHard 4.5s ;
+
+}
+
+.linha-superior-animado {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-bottom: -11px;
+    animation: slideFromLeftHard 1s ;
+
 }
 
 #bolaValores {

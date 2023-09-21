@@ -26,15 +26,16 @@
     grid-template-areas:    "titulo titulo"
                             "midia descricao"
                             "botao botao";
-    column-gap: 20px;
+    /* column-gap: 20px; */
 }
 
 
 .container-carrossel {
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: center;
     position: relative;
+
 }
 
 .carrossel {
