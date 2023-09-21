@@ -6,6 +6,7 @@
     font-size: 0.72rem;
     position: fixed;
     background-color: #015C54;
+    z-index: 1001;;
     /* backdrop-filter: blur(10px); */
 }
 

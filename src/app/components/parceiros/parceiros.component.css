@@ -11,7 +11,8 @@
 
 .titulo {
     grid-area: titulo;
-    color: var(--main-text-color);
+    /* color: var(--main-text-color); */
+    color: #02CEDF;
     font-family: var(--main-titulo-text);
     font-weight: 600;
     font-size: 1.6rem;
