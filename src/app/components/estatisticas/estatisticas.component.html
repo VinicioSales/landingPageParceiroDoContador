@@ -1,31 +1,21 @@
 <div class="container-estatisticas">
-    <div class="titulo">
-        <div class="titulo-texto">{{ estatisticas.titulo }}</div>
-        <div class="sub-titulo-texto">{{ estatisticas.subtitulo }}</div>
-        <div class="linha-titulo">
-            <div class="l1"></div>
-            <div class="l2"></div>
-            <div class="circulo"></div>
-        </div>
-    </div>
-    <div class="estatistica-1">
-        <div class="dados">
-            <div class="texto">{{ estatisticas.dados[0].texto }}</div>
-            <img class="midia" src="{{ estatisticas.dados[0].midia }}" alt="">
-        </div>
-        <div class="linha-estatistica-1">
-            <div class="circulo"></div>
-            <div class="linha"></div>
-        </div>
-    </div>
-    <div class="estatistica-2">
-        <div class="dados">
-            <img class="midia" src="{{ estatisticas.dados[1].midia }}" alt="">
-            <div class="texto">{{ estatisticas.dados[1].texto }}</div>
-        </div>
-        <div class="linha-estatistica-2">
-            <div class="linha"></div>
-            <div class="circulo"></div>
-        </div>
-    </div>
+	<div class="titulo">
+		<div class="titulo-texto">{{ estatisticas?.nome }}</div>
+
+		<div class="linha-titulo">
+			<div class="l1"></div>
+			<div class="l2"></div>
+			<div class="circulo"></div>
+		</div>
+	</div>
+	<div class="estatistica-1">
+		<div class="dados">
+			<div class="texto">{{ estatisticas?.descricao }}</div>
+			<img class="midia" [src]="estatisticas?.media" alt="" />
+		</div>
+		<div class="linha-estatistica-1">
+			<div class="circulo"></div>
+			<div class="linha"></div>
+		</div>
+	</div>
 </div>
