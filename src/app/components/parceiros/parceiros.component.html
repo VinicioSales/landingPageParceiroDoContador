@@ -4,7 +4,13 @@
     </div>
     <div class="item" *ngFor="let parceiro of parceiros">
         <div class="objetos">
-            <div class="circulo"></div>
+            <div class="circulo">
+                <img
+                    [src]= parceiro.midia
+                    alt="Foto do cliente"
+                    class="image-inside-circle"
+                />
+            </div>
             <div class="linha-1"></div>
         </div>
         <div class="info">

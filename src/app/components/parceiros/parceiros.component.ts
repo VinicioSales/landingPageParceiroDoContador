@@ -9,7 +9,7 @@ export class ParceirosComponent {
   parceiros: any[] = [
     {
       texto: "aaaaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaa",
-      midia: "assets/img/dados1.png"
+      midia: "assets/img/dados.png"
     },
     {
       texto: "aaaaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaa",
@@ -17,7 +17,7 @@ export class ParceirosComponent {
     },
     {
       texto: "aaaaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaa",
-      midia: "assets/img/email.png"
+      midia: "assets/img/email-1.png"
     },
   ]
 
