@@ -2,16 +2,17 @@
     width: 100%;
     background: #15151A;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas:    "titulo titulo titulo"
-                            "coluna-1  coluna-2 coluna-3";
+    grid-template-columns: auto;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas:    "titulo"
+                            "item-1"
+                            "item-2"
+                            "item-3";
     padding: 70px 0 70px 0;
 }
 
 .titulo {
     grid-area: titulo;
-    /* color: var(--main-text-color); */
     color: #02CEDF;
     font-family: var(--main-titulo-text);
     font-weight: 600;
@@ -35,100 +36,7 @@
     overflow: hidden;
     position: relative;
     z-index: 10;
-}
-
-.coluna-1,
-.coluna-2,
-.coluna-3 {
-    display: flex;
-    flex-direction: column;
-}
-
-.coluna-1 {
-    grid-area: coluna-1;
-    align-items: end;
-}
-
-.coluna-2 {
-    grid-area: coluna-2;
-    gap: 95px;
-    align-items: center;
-}
-
-.coluna-3 {
-    grid-area: coluna-3;
-    align-items: start;
-
-}
-
-.item-1 {
-    margin-bottom: -70px;
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-.linha-1 {
-    height: 180px;
-    width: 3px;
-    background: #02CEDF;
-    transform: rotate(25deg);
-    position: relative;
-    margin-top: -15px;
-}
-
-.item-2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: -70px;
-
-}
-
-.linha-2 {
-    height: 3px;
-    width: 190px;
-    background: #02CEDF;
-    position: relative;
-}
-
-.linha-3 {
-    height: 180px;
-    width: 3px;
-    background: #02CEDF;
-    transform: rotate(-25deg);
-    position: relative;
-    margin-bottom: -15px;
-}
-
-.item-3-1 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-right: -50px;
-    margin-bottom: -70px;
-}
-
-.linha-3-1 {
-    height: 180px;
-    width: 3px;
-    background: #02CEDF;
-    transform: rotate(-25deg);
-    position: relative;
-    margin-top: -15px;
-    display: flex;
-    align-self: end;
-}
-
-.linha-3-3 {
-    height: 180px;
-    width: 3px;
-    background: #02CEDF;
-    transform: rotate(25deg);
-    position: relative;
-    margin-bottom: -15px;
-    margin-left: 117px;
+    margin: 20px 0px 20px 0px;
 }
 
 .bola {
@@ -138,61 +46,56 @@
     background-color: #02CEDF;
 }
 
+.item-1,
+.item-2,
+.item-3 {
+    display: flex;
+    align-items: center;
+    margin: 25px 25px 25px 120px;
+    /* overflow: hidden; */
+}
+
+.objetos {
+}
+
+.item-1 {
+    grid-area: item-1;
+}
+
+.item-2 {
+    grid-area: item-2;
+}
+
+.item-3 {
+    grid-area: item-3;
+}
+
+.info {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-left: -98px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+}
+
+.container-info {
+    height: 70%;
+    width: 100%;
+    border: 2px solid #02CEDF;
+    border-radius: 50px;
+    margin-right: 20px;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out; /* Define a transição */
+}
+.objetos:hover + .info .container-info {
+    transform: translateX(0);
+}
+
+
 @media screen and (max-width: 820px) {
-    .container-parceiros {
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas:    "titulo"
-                                "linha-1"
-                                "linha-2"
-                                "linha-3"
-    }
 
-    .linha-1,
-    .linha-2,
-    .linha-3,
-    .linha-3-1,
-    .linha-3-3,
-    .bola {
-        display: none;
-    }
-    
-    .coluna-1,
-    .coluna-2,
-    .coluna-3 {
-        flex-direction: row;
-
-    }
-
-    .titulo {
-        grid-area: titulo;
-    }
-
-    .coluna-1,
-    .coluna-2,
-    .coluna-3 {
-        align-items: start;
-        justify-content: space-between;
-        padding-left: 30px;
-        padding-right: 30px;
-        gap: 0;
-        height: 180px;
-    }
-
-    .coluna-1 {
-        grid-area: linha-1;
-    }
-
-    .coluna-2 {
-        grid-area: linha-2;
-    }
-
-    .coluna-3 {
-        grid-area: linha-3;
-    }
-
-    .circulo {
-        width: 90px;
-        height: 90px;
-    }
 }
