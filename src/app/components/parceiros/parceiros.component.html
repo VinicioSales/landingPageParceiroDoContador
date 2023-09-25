@@ -2,33 +2,15 @@
     <div class="titulo">
         Conheça nossos parceiros
     </div>
-    <div class="item-1">
+    <div class="item" *ngFor="let parceiro of parceiros">
         <div class="objetos">
             <div class="circulo"></div>
             <div class="linha-1"></div>
         </div>
         <div class="info">
             <div class="container-info">
-                <!-- {{ parceiros[0].texto }} -->
+                {{ parceiro.texto }}
             </div>
-        </div>
-    </div>
-    <div class="item-2">
-        <div class="objetos">
-            <div class="circulo"></div>
-            <div class="linha-2"></div>
-        </div>
-        <div class="info">
-            <div class="container-info"></div>
-        </div>
-    </div>
-    <div class="item-3">
-        <div class="objetos">
-            <div class="circulo"></div>
-            <div class="linha-3"></div>
-        </div>
-        <div class="info">
-            <div class="container-info"></div>
         </div>
     </div>
 </div>

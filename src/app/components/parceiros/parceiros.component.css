@@ -3,16 +3,12 @@
     background: #15151A;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-template-areas:    "titulo"
-                            "item-1"
-                            "item-2"
-                            "item-3";
+    grid-template-rows: auto; /* Definindo como auto para permitir que o grid ajuste dinamicamente o número de linhas */
     padding: 70px 0 70px 0;
 }
 
 .titulo {
-    grid-area: titulo;
+    grid-row: 1; /* Definindo a primeira linha para o título */
     color: #02CEDF;
     font-family: var(--main-titulo-text);
     font-weight: 600;
@@ -24,11 +20,15 @@
     height: 100px;
 }
 
-
+.item {
+    display: flex;
+    align-items: center;
+    margin: 10px 25px 10px 120px;
+}
 
 .circulo {
-    width: 120px;
-    height: 120px;
+    width: 129px;
+    height: 129px;
     flex-shrink: 0;
     background-color: #191C25;
     border: 1px solid #02CEDF;
@@ -37,30 +37,6 @@
     position: relative;
     z-index: 10;
     margin: 20px 0px 20px 0px;
-}
-
-.item-1,
-.item-2,
-.item-3 {
-    display: flex;
-    align-items: center;
-    margin: 25px 25px 25px 120px;
-    /* overflow: hidden; */
-}
-
-.objetos {
-}
-
-.item-1 {
-    grid-area: item-1;
-}
-
-.item-2 {
-    grid-area: item-2;
-}
-
-.item-3 {
-    grid-area: item-3;
 }
 
 .info {
@@ -75,7 +51,7 @@
 }
 
 .container-info {
-    height: 88%;
+    height: 75%;
     width: 100%;
     border: 2px solid #02CEDF;
     border-top-right-radius: 50px;
