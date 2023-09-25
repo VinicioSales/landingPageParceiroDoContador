@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
+import { BACK_URL } from "src/app/config"
 
 @Component({
 	selector: "app-estatisticas",
@@ -16,7 +17,7 @@ export class EstatisticasComponent implements OnInit {
 	}
 
 	fetchStatistics(): void {
-		this.http.get("http://localhost:60458/statistics").subscribe(
+		this.http.get(`${BACK_URL}/statistics`).subscribe(
 			(data: any) => {
 				this.estatisticas = data[0];
 			},

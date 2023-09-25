@@ -1,3 +1,4 @@
+import { BACK_URL } from "src/app/config"
 import { Component, OnInit } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { PartnersService } from "src/app/services/partners/partners.service";
@@ -25,7 +26,7 @@ export class ParceirosComponent implements OnInit {
 	}
 
 	fetchParceiros(): void {
-		this.http.get("http://localhost:60458/partners").subscribe(
+		this.http.get(`${BACK_URL}/partners`).subscribe(
 			(data: object) => {
 				this.partners = data;
 			},
