@@ -29,11 +29,6 @@
 
 .esquerda {
     display: flex;
-    /* margin-left: 27px; */
-}
-
-.direita {
-    margin-right: 52px;
 }
 
 .esquerda,
@@ -45,7 +40,7 @@
 .logo {
     height: 51px;
     flex-shrink: 0;
-    margin-left: 21px;
+    margin-left: 28px;
     padding-top: 5px;
     display: flex;
     justify-content: center;
@@ -56,19 +51,18 @@
 .nav-left {
     display: flex;
     gap: 45px;  
-    /* margin-left: 62px;  */
+    margin-left: 10px; 
     align-items: center;
 }
 
 .nav-right {
     display: flex;
-    margin-right: 27px;
+    margin-right: 92px;
     gap: 45px;
     align-items: center;
 }
 
 a {
-    /* color: var(--main-text-color); */
     color: var(--cinza-claro);
 }
 
