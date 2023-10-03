@@ -9,11 +9,35 @@
 
 .sobre-container {
     /* background: #015C54; */
-    background: linear-gradient(#015C54, #00484c);
+    background: #282828;
     height: 792px;
     display: flex;
     justify-content: center;
-    color: var(--third-text-color);
+    color: #fff;
+}
+
+.icones-missao img {
+    width: 83.438px;
+    height: 83.438px;
+    flex-shrink: 0;
+    
+}
+
+
+.icone-megafone {
+    width: 59px;
+    height: 59px;
+    flex-shrink: 0;
+    margin-bottom: 2rem;
+}
+
+.icones-missao {
+    display: flex;
+    align-items: center;
+    margin-left: 235px;
+    gap: 320px;
+    /* margin-bottom: -10px; */
+
 }
 
 .grid-sobre {
@@ -39,6 +63,7 @@
     text-align: center;
     font-weight: 600;
     font-size: 1.66rem;
+    color: var(--third-text-color)
 }
 
 .texto-introducao {
