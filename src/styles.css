@@ -2,6 +2,41 @@
 @import '~typeface-ubuntu';
 @import '~typeface-inter';
 
+@font-face {
+    font-family: 'Blinker-Bold';
+    src: url('./assets/fonts/Blinker-Black.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Blinker';
+    src: url('./assets/fonts/Blinker-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Blinker';
+    src: url('./assets/fonts/Blinker-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Blinker';
+    src: url('./assets/fonts/Blinker-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Blinker';
+    src: url('./assets/fonts/Blinker-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Blinker-Regular';
+    src: url('./assets/fonts/Blinker-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Blinker-SemiBold';
+    src: url('./assets/fonts/Blinker-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Blinker';
+    src: url('./assets/fonts/Blinker-Thin.ttf') format('truetype');
+
+}
+
+
 
 html, body {
     height: 100%;
@@ -11,7 +46,7 @@ html, body {
 
 body {
     margin: 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Blinker-SemiBold';
 
 }
 
@@ -26,10 +61,17 @@ a {
     --second-text-color: #0F101E;
     --third-text-color: #FFA506;
     --third-main-color: #B1E239;
-    --main-titulo-text: 'Inter', sans-serif;
+    --main-titulo-text: 'Blinker';
     --breakpoint-mobile: 820px;
     --cor-usb: #FFF;
     --cor-usb-2: #B1E239;
+    --cinza-claro: #333;
+    --preto: #282828;
+    --branco: #E7E7E7;
+    --verde-claro: #B1E239;
+    --font-regular: 'Blinker-Regular';
+    --font-semiBold: 'Blinker-SemiBold';
+    --laranja: #F06702;
 }
 
 ::-webkit-scrollbar {
@@ -42,6 +84,12 @@ a {
 ::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 1px;
+}
+
+@media screen and (max-width: 820px) {
+    html, body {
+        font-size: 14px;
+    }
 }
 
 
