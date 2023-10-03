@@ -68,7 +68,10 @@ a {
     --cinza-claro: #333;
     --preto: #282828;
     --branco: #E7E7E7;
-
+    --verde-claro: #B1E239;
+    --font-regular: 'Blinker-Regular';
+    --font-semiBold: 'Blinker-SemiBold';
+    --laranja: #F06702;
 }
 
 ::-webkit-scrollbar {

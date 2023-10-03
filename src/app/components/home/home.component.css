@@ -37,24 +37,49 @@
     }
 }
 
-
-
 .home-container {
     height: 603px;
-    background: #B1E239;
+    background: linear-gradient(#202020, #282828) var(--preto);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.frase-home {
-    font-size: 2.77rem;
-    font-weight: 700;
-    color: var(--main-text-color);
-    font-family: var(--main-titulo-text);
+.centro {
     margin-top: 150px;
     margin-left: 163px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.frase-home {
+    font-size: 2.77rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: var(--font-regular);
+    line-height: 97%;
+    letter-spacing: 4.25px;
+    color: var(--verde-claro);
+
     animation: slideFromRightHardFx 1s ;
+}
+
+.botao {
+    width: 225px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: var(--laranja);
+    color: var(--branco);
+    font-family: var(--font-semiBold);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.botao:hover {
+    transform: scale(1.03);
+    cursor: pointer;
 }
 
 .container-titulo {
@@ -114,9 +139,6 @@
 
     .frase-home {
         display: none;
-        /* font-size: 2.5rem;
-        margin-left: 10px;
-        margin-top: 30px; */
     }
 
     .titulo {
