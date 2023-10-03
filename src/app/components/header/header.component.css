@@ -16,9 +16,8 @@
     font-size: 0.88rem;
     font-weight: 600;
     letter-spacing: 1.04px;
-    
     position: fixed;
-    background-color: #E7E7E7;
+    background-color: var(--branco);
     z-index: 1001;;
 }
 
@@ -45,7 +44,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: url("assets/img/marcasembgconepreenchidopreto-1.png"), lightgray 50% / cover no-repeat; */
 }
 
 .nav-left {
@@ -77,17 +75,21 @@ a {
         display: none;
     }
 
+    .header-container{
+        display: none;
+    }
+
     .header-mobile-container {
         display: flex;
         width: 100%;
         height: 40px;
-        background: #2B304D;
-        font-size: 0.72rem;
+        background-color: var(--branco);
         justify-content: space-between;
+        align-items: center;
     }
 
     .logo {
-        margin-left: 5px;
+        margin-left: 0;
     }
 
     .menu-mobile {
@@ -100,7 +102,7 @@ a {
     }
 
     mat-icon {
-        color: var(--main-elements-color);
+        color: var(--cinza-claro);
     }
 }
 
