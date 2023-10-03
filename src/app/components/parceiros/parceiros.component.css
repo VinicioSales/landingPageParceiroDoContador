@@ -30,7 +30,7 @@
     width: 129px;
     height: 129px;
     flex-shrink: 0;
-    background-color: #191C25;
+    background-color: #fff;
     border: 1px solid #02CEDF;
     border-radius: 50%;
     overflow: hidden;
@@ -42,7 +42,7 @@
 .image-inside-circle {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:contain;
     display: block;
 }
 

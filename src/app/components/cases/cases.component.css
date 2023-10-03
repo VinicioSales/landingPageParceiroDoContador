@@ -59,6 +59,8 @@
     position: relative; 
 }
 
+
+
 .linha-circulo {
     display: flex;
     flex-direction: column;
