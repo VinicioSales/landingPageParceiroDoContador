@@ -40,6 +40,10 @@
 
 }
 
+#icone-foguete {
+    margin-bottom: 4px;
+}
+
 .grid-sobre {
     width: 100%;
     display: grid;
@@ -63,7 +67,9 @@
     text-align: center;
     font-weight: 600;
     font-size: 1.66rem;
-    color: var(--third-text-color)
+    color: var(--third-text-color);
+    margin-bottom: -50px;
+    margin-left: 15px;
 }
 
 .texto-introducao {
