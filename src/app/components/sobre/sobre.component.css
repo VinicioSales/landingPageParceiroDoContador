@@ -33,19 +33,14 @@
 }
 
 
-#icone-foguete {
-    margin-bottom: 4px;
-}
-
 .grid-sobre {
     width: 100%;
     padding-left: 50px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: auto auto auto, auto;
+    grid-template-rows: auto auto auto;
     grid-template-areas:    "intro intro intro"
                             "foguete bandeira maos"
-                            "ls ls ls"
                             "valores missao visao";
 }
 
@@ -76,17 +71,25 @@
     margin-top: 51px;
 }
 
-.valores-container {
-    width: 100%;
-    grid-area: valores;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 98px;
+#foguete {
+    grid-area: foguete;
+    margin-bottom: 3px;
 }
 
+#bandeira {
+    grid-area: bandeira;
+}
+
+#maos {
+    grid-area: maos;
+    margin-bottom: 1px;
+}
+
+
 .linha-superior {
-    grid-area: ls;
+    /* grid-area: ls; */
+    grid-row: 2;
+    grid-column: 1 / span 3;
     width: 95%;
     display: flex;
     align-items: center;
@@ -207,10 +210,4 @@ h2 {
         display: block;
         margin-top: 30px;
     }
-
-    .valores-container {
-        flex-direction: row;
-        margin-left: 0;
-    }
-
 }
