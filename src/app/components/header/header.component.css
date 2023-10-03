@@ -68,6 +68,18 @@ a {
     display: none;
 }
 
+::ng-deep .mat-mdc-menu-item,
+::ng-deep .mat-mdc-focus-indicator {
+    padding-left: 100px;
+    color: red;
+
+}
+
+::ng-deep .mat-mdc-menu-item .mat-icon-no-color,
+::ng-deep .mat-mdc-menu-item {
+    color: var(--preto) !important;
+}
+
 @media screen and (max-width: 820px) {
     .esquerda,
     .nav-left,
@@ -92,6 +104,10 @@ a {
         margin-left: 0;
     }
 
+    .logo-mobile {
+        margin-left: -25px;
+    }
+
     .menu-mobile {
         background:  transparent;
         border: none;
@@ -104,6 +120,27 @@ a {
     mat-icon {
         color: var(--cinza-claro);
     }
+
+    ::ng-deep .cdk-overlay-pane {
+        width: 100%;
+    }
+
+    ::ng-deep #mat-menu-panel-0 {
+        width: 100%;
+        max-width: 1000px;
+        background-color: var(--branco);
+        box-shadow: none;
+    }
+
+    ::ng-deep .mat-mdc-menu-content {
+        width: 100%;
+        max-width: none;
+    }
+
+    ::ng-deep .mat-mdc-menu-item {
+        color: red;
+    }
+
 }
 
 html {
