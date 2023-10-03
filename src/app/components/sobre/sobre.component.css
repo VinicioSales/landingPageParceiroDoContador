@@ -22,6 +22,7 @@
     display: flex;
     justify-self: center;
     align-self: end;
+    margin-left: 120px;
 }
 
 .icone-megafone {
@@ -119,6 +120,7 @@
 .conteudo-visao {
     display: flex;
     justify-content: center;
+    justify-self: center;
     align-items: center;
     align-self: start;
     max-width: 80%;
@@ -156,6 +158,8 @@
 
 .linha {
     margin-bottom: 90px;
+    flex-shrink: 0;
+    
 }
 
 h2 {
