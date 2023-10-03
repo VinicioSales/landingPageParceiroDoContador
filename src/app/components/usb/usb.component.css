@@ -61,13 +61,13 @@
     height: 0;
     border-left: 10px solid transparent;   /* metade da largura do triângulo */
     border-right: 10px solid transparent;  /* metade da largura do triângulo */
-    border-bottom: 20px solid var(--cor-usb);        /* altura do triângulo */
+    border-bottom: 20px solid var(--cinza-claro);        /* altura do triângulo */
 }
 
 .linha {
     height: 100%;
     width: 3px;
-    background: var(--cor-usb);
+    background: var(--cinza-claro);
     flex-shrink: 1;
 }
 
@@ -75,7 +75,7 @@
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color: var(--cor-usb);
+    background-color: var(--cinza-claro);
 }
 
 .braco-1 {
@@ -124,7 +124,7 @@ svg path {
     .triangle {
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
-        border-bottom: 10px solid var(--cor-usb);
+        border-bottom: 10px solid var(--cinza-claro);
     }
 
     .bola {
