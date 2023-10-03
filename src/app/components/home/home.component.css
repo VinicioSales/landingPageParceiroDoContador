@@ -82,14 +82,15 @@
     cursor: pointer;
 }
 
-.container-titulo {
+.container-logo {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding-bottom: 30px;
+    
 }
 
-.titulo {
+.logo {
     display: flex;
     justify-content: center;
     animation: fadeIn 3s ;
@@ -119,21 +120,27 @@
         height: 400px;
     }
 
-    .frase-home {
+    .container-logo {
+        padding-bottom: 0;
+        margin-top: -80px;
+    }
+
+    .centro {
+        margin-left: 30px;
+        align-items: center;
+    }
+
+    .botao {
         display: none;
     }
 
-    .titulo {
-        font-size: 3rem;
-        margin-top: 0px;
-        align-items: start;
-        justify-content: center;
-        
+    .frase-home {
+        margin-top: 0;
     }
 
-    .sub-titulo {
-        font-size: 0.6rem;
-        white-space: nowrap;
+    .logo {
+        transform: scale(0.5);
+        margin-top: 0;
     }
 
     .linha {
