@@ -16,13 +16,13 @@
     color: #fff;
 }
 
-.icones-missao img {
+.icones {
     width: 83.438px;
     height: 83.438px;
-    flex-shrink: 0;
-    
+    display: flex;
+    justify-self: center;
+    align-self: end;
 }
-
 
 .icone-megafone {
     width: 59px;
@@ -31,14 +31,6 @@
     margin-bottom: 2rem;
 }
 
-.icones-missao {
-    display: flex;
-    align-items: center;
-    margin-left: 235px;
-    gap: 320px;
-    /* margin-bottom: -10px; */
-
-}
 
 #icone-foguete {
     margin-bottom: 4px;
@@ -47,10 +39,11 @@
 .grid-sobre {
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto auto;
     grid-template-areas:    "intro intro intro"
-                            "valores valores valores";
+                            "foguete bandeira maos"
+                            "valores missao visao";
 }
 
 .introducao {
@@ -115,6 +108,27 @@
     width: 80%;
 }
 
+.conteudo-valores,
+.conteudo-missao,
+.conteudo-visao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+}
+
+.conteudo-valores {
+    grid-area: valores;
+}
+
+.conteudo-missao {
+    grid-area: missao;
+}
+
+.conteudo-visao {
+    grid-area: visao;
+}
+
 .valores-linhas {
     margin-left: 30px;
 }
@@ -133,7 +147,7 @@
     opacity: 100%;
 }
 
-.linha-valores {
+.linha {
     margin-bottom: 90px;
 }
 
@@ -168,7 +182,7 @@ h2 {
     }
 
     .valores-linhas,
-    .linha-valores,
+    .linha,
     .linha-superior {
         display: none;
     }
