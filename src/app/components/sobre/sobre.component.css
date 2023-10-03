@@ -22,7 +22,7 @@
     display: flex;
     justify-self: center;
     align-self: end;
-    margin-left: 120px;
+    /* margin-left: 120px; */
 }
 
 .icone-megafone {
@@ -43,8 +43,6 @@
                             "foguete bandeira maos"
                             "valores missao visao";
 }
-
-
 
 .introducao {
     grid-area:  intro;
@@ -74,6 +72,8 @@
 #foguete {
     grid-area: foguete;
     margin-bottom: 3px;
+    margin-left: 120px;
+
 }
 
 #bandeira {
@@ -124,7 +124,7 @@
 .conteudo-visao {
     display: flex;
     justify-content: center;
-    justify-self: center;
+    /* justify-self: center; */
     align-items: center;
     align-self: start;
     max-width: 80%;
@@ -132,6 +132,9 @@
 
 .conteudo-valores {
     grid-area: valores;
+    display: flex;
+    justify-self: center;
+    margin-left: 30px;
 }
 
 .conteudo-missao {
@@ -140,10 +143,8 @@
 
 .conteudo-visao {
     grid-area: visao;
-}
+    /* margin-right: 50px; */
 
-.valores-linhas {
-    margin-left: 30px;
 }
 
 .coluna {
@@ -196,7 +197,6 @@ h2 {
         align-items: center;
     }
 
-    .valores-linhas,
     .linha,
     .linha-superior {
         display: none;
@@ -209,5 +209,12 @@ h2 {
     .bola-separadora {
         display: block;
         margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 2164px) {
+    #bandeira,
+    #maos {
+        margin-right: 70px;
     }
 }
