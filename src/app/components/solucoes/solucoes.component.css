@@ -98,6 +98,10 @@
     transition: ease 0.5s;
 }
 
+/* .botao:hover {
+    box-shadow: 0 0 15px blue;
+} */
+
 
 .linha {
     width: 1px;

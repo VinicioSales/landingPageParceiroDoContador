@@ -12,6 +12,7 @@ export class SolucoesComponent {
 	@Input() tituloSolucao!: string;
 
 	tipoSolucao: string = "";
+	hovered: boolean = false;
 	showModal: boolean = false;
 
 	solucoes = [

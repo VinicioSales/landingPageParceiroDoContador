@@ -32,7 +32,12 @@
 						</div>
 						<div class="descricao">{{ solucao.descricao }}</div>
 						<button class="botao"
-							[ngStyle]="{'background-color': solucao.buttonColor}"
+							[ngStyle]="{
+								'background-color': solucao.buttonColor,
+								'box-shadow': hovered ? '0 0 15px ' + solucao.buttonColor : 'none'
+							}"
+							(mouseover)="hovered = true"
+							(mouseout)="hovered = false"
 							(click)="openModal(solucao.tituloSolucao)"
 							>
 							Saiba mais
