@@ -26,6 +26,7 @@ export class ModalSolucoesComponent {
 	constructor(private produtosService: ProdutosService) {}
 
 	ngOnInit(): void {
+		console.log("init")
 		//REVIEW - Verificar como fazer um De/Para mais consistente
 
 		this.tipoSolucao = this.normalizeString(this.tipoSolucao);

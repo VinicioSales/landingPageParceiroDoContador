@@ -33,15 +33,10 @@
 						<div class="descricao">{{ solucao.descricao }}</div>
 						<button class="botao"
 							[ngStyle]="{'background-color': solucao.buttonColor}"
+							(click)="openModal(solucao.tituloSolucao)"
 							>
 							Saiba mais
 						</button>
-						<!-- <div class="botao"> -->
-							<!-- <app-botao
-								[texto]="'Saiba mais'"
-								(click)="openModal(solucao.tituloSolucao)"
-							></app-botao> -->
-							<!-- </div> -->
 					</div>
 				</div>
 			</ng-template>
