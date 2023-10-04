@@ -1,22 +1,11 @@
 .container-solucoes {
-    /* background:     #00564f; */
-    background: linear-gradient(#00484c, #003a49);
+    background: var(--preto);
     height: 100%;
-    color: var(--third-text-color);
+    color: var(--branco);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.titulo-solucoes {
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    font-family: var(--main-titulo-text);
-    font-weight: 600;
-    font-size: 1.66rem;
-    padding-top: 50px;
 }
 
 .container-solucao {
@@ -26,16 +15,14 @@
     grid-template-areas:    "titulo titulo"
                             "midia descricao"
                             "botao botao";
-    /* column-gap: 20px; */
 }
 
 
 .container-carrossel {
-    width: 70%;
-    display: flex;
+    width: 100%;
+    /* display: flex; */
     justify-content: center;
     position: relative;
-
 }
 
 .carrossel {
@@ -49,8 +36,7 @@
     grid-area: titulo;
     display: flex;
     justify-content: center;
-    font-family: var(--main-titulo-text);
-    font-size: 1.11rem;
+    font-size: 1.3rem;
     font-weight: 700;
     align-items: end;
 
@@ -58,6 +44,8 @@
 
 .midias {
     grid-area: midia;
+    width: 274px;
+    height: 215px;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -74,14 +62,16 @@
 
 .descricao {
     grid-area: descricao;
+    width: 570px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align:justify;
-    font-family: var(--main-text-color);
     font-size: 1.11rem;
     font-weight: 500;
     letter-spacing: 1.3px;
+    font-family: var(--font-regular);
+    
 }
 
 .botao {
@@ -97,21 +87,10 @@
     
 }
 
-::ng-deep .carousel-control-prev,
-::ng-deep .carousel-control-next {
-    position: absolute;
-    top: 50%;  /* Centra os botões verticalmente */
-    transform: translateY(-50%);
-    z-index: 10;  /* Garante que os botões apareçam na frente do conteúdo do carrossel */
-}
-
 ::ng-deep .carousel-control-prev {
-    left: -15%;  /* Desloca o botão para a esquerda */
+    left: 3%; 
 }
 
-::ng-deep .carousel-control-next {
-    right: -15%;  /* Desloca o botão para a direita */
-}
 
 .container-carrossel .carrossel {
     z-index: 5;

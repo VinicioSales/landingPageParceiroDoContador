@@ -59,7 +59,6 @@ a {
     --main-text-color: #015C54;
     --main-elements-color: white;
     --second-text-color: #0F101E;
-    --third-text-color: #FFA506;
     --third-main-color: #B1E239;
     --main-titulo-text: 'Blinker';
     --breakpoint-mobile: 820px;
@@ -67,6 +66,7 @@ a {
     --cinza-claro: #333;
     --preto: #282828;
     --branco: #E7E7E7;
+    --amarelo: #FFA506;
     --verde-claro: #B1E239;
     --font-regular: 'Blinker-Regular';
     --font-semiBold: 'Blinker-SemiBold';
