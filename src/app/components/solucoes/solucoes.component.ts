@@ -19,12 +19,12 @@ export class SolucoesComponent {
 			tituloSolucao: "AUTOMAÇÕES",
 			descricao:
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-			imagem1: "/assets/img/cones-verso-azul-071.png",
-			imagem2: "assets/img/cones-verso-azul-211.png",
+			imagem1: "assets/img/cones-verso-azul-211.png",
+			imagem2: "/assets/img/Ícones - Versão Azul-17.png",
 			buttonColor: 'var(--azul-claro)',
 		},
 		{
-			tituloSolucao: "Integrações",
+			tituloSolucao: "INTEGRAÇÕES",
 			descricao:
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 			imagem1: "assets/img/Ícones - Versão Laranja-34.png",
@@ -32,7 +32,7 @@ export class SolucoesComponent {
 			buttonColor: 'var(--amarelo)',
 		},
 		{
-			tituloSolucao: "Análise de Dados",
+			tituloSolucao: "ANÁLISE DE DADOS",
 			descricao:
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 			imagem1: "assets/img/Ícones - Versão Verde-02.png",
