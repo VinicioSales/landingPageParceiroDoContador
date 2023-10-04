@@ -10,7 +10,10 @@
 			<ng-template ngbSlide *ngFor="let solucao of solucoes">
 				<div class="carrossel">
 					<div class="container-solucao">
-						<div class="titulo-solucao">
+						<div
+							class="titulo-solucao"
+							[ngStyle]="{'color': solucao.buttonColor}"
+							>
 							{{ solucao.tituloSolucao }}
 						</div>
 						<div class="midias">
