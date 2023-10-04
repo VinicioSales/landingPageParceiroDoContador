@@ -71,6 +71,8 @@ a {
     --font-regular: 'Blinker-Regular';
     --font-semiBold: 'Blinker-SemiBold';
     --laranja: #F06702;
+    --azul-claro: #0084FF;
+    --azul-escuro: #192847;
 }
 
 ::-webkit-scrollbar {

@@ -76,9 +76,18 @@
 
 .botao {
     grid-area: botao;
-    width: 80%;
-    justify-self: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 22px;
+    font-size: 1rem;
+    color: var(--preto);
+    border: none;
+    border-radius: 5px;
+    transition: ease 0.5s;
 }
+
 
 .linha {
     width: 1px;

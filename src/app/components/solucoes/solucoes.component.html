@@ -26,12 +26,17 @@
 							/>
 						</div>
 						<div class="descricao">{{ solucao.descricao }}</div>
-						<div class="botao">
-							<app-botao
+						<button class="botao"
+							[ngStyle]="{'background-color': solucao.buttonColor}"
+							>
+							Saiba mais
+						</button>
+						<!-- <div class="botao"> -->
+							<!-- <app-botao
 								[texto]="'Saiba mais'"
 								(click)="openModal(solucao.tituloSolucao)"
-							></app-botao>
-						</div>
+							></app-botao> -->
+							<!-- </div> -->
 					</div>
 				</div>
 			</ng-template>
