@@ -11,7 +11,7 @@
 .container-solucao {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 25vh 50vh 25vh;
+    grid-template-rows: 10vh 45vh 10vh;
     grid-template-areas:    "titulo titulo"
                             "midia descricao"
                             "botao botao";
@@ -58,7 +58,16 @@
     height: 160px;
 }
 
+#midia1 {
+    position: relative;
+    margin-right: -70px;
+    margin-top: -45px;
+}
 
+#midia2 {
+    z-index: 10;
+    margin-bottom: -50px;
+}
 
 .descricao {
     grid-area: descricao;
@@ -68,10 +77,9 @@
     align-items: center;
     text-align:justify;
     font-size: 1.11rem;
-    font-weight: 500;
     letter-spacing: 1.3px;
     font-family: var(--font-regular);
-    
+    line-height: 120%;
 }
 
 .botao {
