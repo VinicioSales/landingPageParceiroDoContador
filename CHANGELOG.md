@@ -1,3 +1,14 @@
+## Changelog - 10/10/2023
+
+---
+
+### Atualizações:
+- Atualizando estatisticas
+- Finalizado cases
+- Finalizado formulario
+
+---
+
 ## Changelog - 03/10/2023
 
 ---
