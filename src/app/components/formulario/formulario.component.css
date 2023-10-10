@@ -4,7 +4,7 @@
     justify-content: center;
     height: 100%;
     /* background-color: #0F101E; */
-    background: linear-gradient(#003a49, #015C54);
+    background: var(--preto);
     margin: 0;
     padding: 0;
     grid-template-columns: 60% 40%;
@@ -23,10 +23,10 @@
 
 .texto {
     font-size: 1.7rem;
-    font-family: var(--main-titulo-text);
+    font-family: var(--font-semiBold);
     font-weight: 700;
     text-align: left;
-    color: var(--third-text-color);
+    color: var(--amarelo);
     margin-left: 180px;
     line-height: 1.1;
     max-width: 750px;
@@ -53,12 +53,12 @@
 }
 
 .form-container {
-    /* background-color: #002a36; */
-    background-color: #00323f;
+    background-color: #232323;
     width: 402px;
     height: 480px;
-    padding: 24px 30px 24px 30px;
+    padding: 24px 47px 24px 47px;
     overflow-y: auto;
+    font-family: var(--font-regular);
     box-shadow: 10px 10px 17px 4px rgba(2,41,41,1);
 }
 
@@ -72,7 +72,7 @@ input, textarea {
     color: var(--third-text-color);
     outline: none;
     font-size: 0.8rem;
-    padding-left: 3px;
+    padding-left: 14px;
 }
 
 /* WebKit, Blink, Edge */
@@ -113,20 +113,22 @@ textarea {
 .botao {
     background-color: red;
     width: 100%;
+
+
 }
 
 .container-botao {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #FFF;
+    background: var(--amarelo);
     color: var(--second-text-color);
     text-align: center;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 0.845px;
     height: 22px;
-    border-radius: 2px;
+    border-radius: 5px;
     border: none;
     flex-shrink: 1;
     width: 100%;
@@ -134,10 +136,10 @@ textarea {
 
 .container-botao:hover {
     cursor: pointer;
-    background-color: var(--third-main-color);
-    color: var(--main-text-color);
     transition: 0.2s;
     width: 100%;
+    transition: ease 0.5s;
+    animation: glowing 1.5s infinite alternate;
 }
 
 .error-message {
@@ -188,5 +190,17 @@ textarea {
     .right-frame {
         align-self: start;
         margin-top: 80px;
+    }
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px -6px var(--amarelo), 0 0 10px -6px var(--amarelo), 0 0 15px -6px var(--amarelo), 0 0 20px -6px var(--amarelo);
+    }
+    50% {
+        box-shadow: 0 0 10px -6px var(--amarelo), 0 0 20px -6px var(--amarelo), 0 0 30px -6px var(--amarelo), 0 0 40px -6px var(--amarelo);
+    }
+    100% {
+        box-shadow: 0 0 5px -6px var(--amarelo), 0 0 10px -6px var(--amarelo), 0 0 15px -6px var(--amarelo), 0 0 20px -6px var(--amarelo);
     }
 }
