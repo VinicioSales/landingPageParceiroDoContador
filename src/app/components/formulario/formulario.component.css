@@ -54,7 +54,7 @@
 
 .container-robo {
     margin-right: -235px;
-    margin-top: -110px;
+    margin-top: -100px;
 }
 
 .linhas {
@@ -67,44 +67,30 @@
     margin-bottom: 5px;
 }
 
-.linha-1, .linha-1-alterado {
+.linha-1 {
     width: 3px;
+    height: 15px;
     transform: rotate(-54.246deg);
     background-color: var(--amarelo);
 }
 
-.linha-2, .linha-2-alterado {
+.linha-2 {
     width: 3px;
+    height: 34px;
     background-color: var(--amarelo);
     margin-bottom: 10px;
 }
 
-.linha-3, .linha-3-alterado {
+.linha-3 {
     width: 3px;
+    height: 15px;
     transform: rotate(54.246deg);
     background-color: var(--amarelo);
 }
 
-.linha-1-alterado {
-    height: 30px;
+.glow {
+    box-shadow: 0 0 5px var(--amarelo), 0 0 10px var(--amarelo), 0 0 20px var(--amarelo);
 }
-
-.linha-2 {
-    height: 34px;
-}
-
-.linha-2-alterado {
-    height: 15px;
-}
-
-.linha-3-alterado {
-    height: 30px;
-}
-
-.linha-1, .linha-3 {
-    height: 15px;
-}
-
 
 .robo {
     width: 83px;

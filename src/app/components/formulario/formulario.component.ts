@@ -6,6 +6,7 @@ import {
 	AbstractControl,
 } from "@angular/forms";
 import { LeadsService } from "../../services/leads/leads.service";
+import { interval, Subscription } from "rxjs";
 
 @Component({
 	selector: "app-formulario",
@@ -14,19 +15,34 @@ import { LeadsService } from "../../services/leads/leads.service";
 })
 export class FormularioComponent implements OnInit {
 	form!: FormGroup;
-	alterado: boolean = false;
+	linha1Glow = false;
+	linha2Glow = false;
+	linha3Glow = false;
+
+	private subscription!: Subscription;
 
 	constructor(
 		private fb: FormBuilder,
 		private leadsService: LeadsService,
-		) {
-			setInterval(() => {
-				this.alterado = !this.alterado;
-			}, 1000);
-		}
+		) {}
 
 	//NOTE - ngOnInit
 	ngOnInit() {
+		const source = interval(400);
+    this.subscription = source.subscribe(count => {
+		switch (count % 3) {
+			case 0:
+			this.linha1Glow = !this.linha1Glow;
+			break;
+			case 1:
+			this.linha2Glow = !this.linha2Glow;
+			break;
+			case 2:
+			this.linha3Glow = !this.linha3Glow;
+			break;
+		}
+		});
+
 		this.form = this.fb.group({
 			nome: ["", [Validators.required, this.noNumberValidator]],
 			empresa: ["", Validators.required],
@@ -36,7 +52,10 @@ export class FormularioComponent implements OnInit {
 		});
 	}
 
-	
+	//NOTE - ngOnDestroy
+	ngOnDestroy() {
+		this.subscription.unsubscribe();
+	}
 
 	//NOTE - noNumberValidator
 	noNumberValidator(
