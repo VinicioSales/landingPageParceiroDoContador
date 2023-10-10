@@ -99,9 +99,16 @@
 }
 
 .textoBotao {
+    width: 100%;
+    display: flex;
     color: var(--preto);
+    justify-content: center;
+    align-items: center;
 }
 
+.textoBotao:hover {
+    color: white;
+}
 
 .linha {
     width: 1px;
