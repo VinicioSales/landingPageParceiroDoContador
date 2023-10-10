@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    /* background-color: #0F101E; */
     background: var(--preto);
     margin: 0;
     padding: 0;
@@ -53,6 +52,17 @@
     justify-content: center;
 }
 
+.cotnaier-robo {
+    position: relative;
+    margin-right: -235px;
+    margin-top: -65px;
+}
+
+.robo {
+    width: 83px;
+    height: 61px;
+}
+
 .form-container {
     background-color: #232323;
     width: 402px;
@@ -61,6 +71,7 @@
     overflow-y: auto;
     font-family: var(--font-regular);
     box-shadow: 10px 10px 17px 4px #10100f;
+    z-index: 999;
 }
 
 input, textarea {

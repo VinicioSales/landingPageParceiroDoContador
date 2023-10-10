@@ -15,6 +15,9 @@
         </div>
     </div>
     <div class="right-frame">
+        <div class="cotnaier-robo">
+            <img class="robo" src="assets/img/cones-verso-laranja-171.png" alt="">
+        </div>
         <div class="form-container">
             <form [formGroup]="form" (ngSubmit)="onSubmit()">
                 <div *ngIf="form.get('nome')?.hasError('hasNumber') && form.get('nome')?.touched" class="error-message">Formato do Nome inválido</div>
