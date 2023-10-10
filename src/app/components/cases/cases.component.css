@@ -23,6 +23,7 @@
 .linha {
     grid-area: cases;
     margin-left: 95px;
+    width: 110%;
 }
 
 .cases {
@@ -132,6 +133,16 @@
         align-self: none;
         font-size: 1.6rem;
         font-weight: 600;
+    }
+
+    #cases {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto {
+        width: 300px;
     }
 
     .cases {
