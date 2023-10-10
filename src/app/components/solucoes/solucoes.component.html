@@ -34,13 +34,16 @@
 						<button class="botao"
 							[ngStyle]="{
 								'background-color': solucao.buttonColor,
-								'box-shadow': hovered ? '0 0 15px ' + solucao.buttonColor : 'none'
+								'box-shadow': hovered ? '0 0 15px ' + solucao.buttonColor : 'none',
+								'color': solucao.buttonColor,
 							}"
 							(mouseover)="hovered = true"
 							(mouseout)="hovered = false"
 							(click)="openModal(solucao.tituloSolucao)"
 							>
-							Saiba mais
+							<div class="textoBotao">
+								Saiba mais
+							</div>
 						</button>
 					</div>
 				</div>
