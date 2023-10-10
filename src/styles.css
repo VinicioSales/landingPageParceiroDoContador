@@ -7,7 +7,7 @@
     src: url('./assets/fonts/Blinker-Black.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Blinker';
+    font-family: 'Blinker-Bold';
     src: url('./assets/fonts/Blinker-Bold.ttf') format('truetype');
 }
 @font-face {
@@ -19,7 +19,7 @@
     src: url('./assets/fonts/Blinker-ExtraLight.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Blinker';
+    font-family: 'Blinker-Light';
     src: url('./assets/fonts/Blinker-Light.ttf') format('truetype');
 }
 @font-face {
@@ -70,6 +70,8 @@ a {
     --verde-claro: #B1E239;
     --font-regular: 'Blinker-Regular';
     --font-semiBold: 'Blinker-SemiBold';
+    --font-bold: 'Blinker-Bold';
+    --font-light: 'Blinker-Light';
     --laranja: #F06702;
     --azul-claro: #0084FF;
     --azul-escuro: #192847;
