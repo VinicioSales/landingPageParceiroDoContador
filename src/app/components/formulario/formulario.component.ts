@@ -14,8 +14,16 @@ import { LeadsService } from "../../services/leads/leads.service";
 })
 export class FormularioComponent implements OnInit {
 	form!: FormGroup;
+	alterado: boolean = false;
 
-	constructor(private fb: FormBuilder, private leadsService: LeadsService) {}
+	constructor(
+		private fb: FormBuilder,
+		private leadsService: LeadsService,
+		) {
+			setInterval(() => {
+				this.alterado = !this.alterado;
+			}, 1000);
+		}
 
 	//NOTE - ngOnInit
 	ngOnInit() {
@@ -27,6 +35,8 @@ export class FormularioComponent implements OnInit {
 			descricao: [""],
 		});
 	}
+
+	
 
 	//NOTE - noNumberValidator
 	noNumberValidator(
