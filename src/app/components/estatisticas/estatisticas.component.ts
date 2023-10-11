@@ -10,8 +10,26 @@ import { BACK_URL } from "src/app/config"
 export class EstatisticasComponent implements OnInit {
 	estatisticas: any;
 
+	
+	// estatisticas =  [
+	// 	{
+	// 		nome: "70% de produtividade",
+	// 		descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+	// 		media: "assets/img/celular-1.png"
+
+	// 	},
+	// 	{	
+	// 		nome: "sasasa",
+	// 		descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+	// 		media: "assets/img/celular-1.png"
+
+	// 	},
+	// ]
 	constructor(private http: HttpClient) {}
 
+	
+
+	
 	ngOnInit(): void {
 		this.fetchStatistics();
 	}
