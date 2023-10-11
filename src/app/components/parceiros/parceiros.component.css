@@ -1,6 +1,6 @@
 .container-parceiros {
     width: 100%;
-    background: #15151A;
+    background: var(--preto);
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto; /* Definindo como auto para permitir que o grid ajuste dinamicamente o número de linhas */
