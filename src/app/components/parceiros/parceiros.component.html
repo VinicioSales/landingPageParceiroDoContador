@@ -4,17 +4,19 @@
     </div>
     <div class="item" *ngFor="let parceiro of partners">
         <div class="objetos">
-            <div class="circulo">
+            <div class="circulo" (mouseover)="activateTransform(parceiro)">
                 <img
                     [src]= parceiro.media
                     alt="Foto do cliente"
                     class="image-inside-circle"
                 />
             </div>
+            
+            
             <div class="linha-1"></div>
         </div>
         <div class="info">
-            <div class="container-info">
+            <div class="container-info" [class.active]="parceiro.isTransformActive">
                 <div class="nome-parceiro">
                     {{ parceiro.empresa }}
                 </div>
@@ -23,5 +25,7 @@
                 </div>
             </div>
         </div>
+        
+        
     </div>
 </div>

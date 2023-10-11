@@ -9,20 +9,31 @@ import { PartnersService } from "src/app/services/partners/partners.service";
 	styleUrls: ["./parceiros.component.css"],
 })
 export class ParceirosComponent implements OnInit {
-	partners: any = [];
+	// partners: any = [];
+	partners: any = [
+		{empresa: "PARCEIRO", isTransformActive: false, media: "assets/img/Ícones - Versão Laranja-03.png", descricao: "shaushaushaushaushaushaushaush ahs uahsau ahu hsau hua"},
+		{empresa: "PARCEIRO", isTransformActive: false, media: "assets/img/Ícones - Versão Laranja-03.png", descricao: "shaushaushaushaushaushaushaush ahs uahsau ahu hsau hua"},
+		{empresa: "PARCEIRO", isTransformActive: false, media: "assets/img/Ícones - Versão Laranja-03.png", descricao: "shaushaushaushaushaushaushaush ahs uahsau ahu hsau hua"},
+	]
+	isTransformActive = false;
+    
+    activateTransform(parceiro: any) {
+		parceiro.isTransformActive = true;
+	}
+	
 	constructor(
 		private partnersService: PartnersService,
 		private http: HttpClient
 	) {}
 
 	ngOnInit(): void {
-		this.partnersService.getPartners().subscribe((data) => {
-			if (Array.isArray(data)) {
-				this.partners = data;
-			} else {
-				console.error("O retorno não é um array:", data);
-			}
-		});
+		// this.partnersService.getPartners().subscribe((data) => {
+		// 	if (Array.isArray(data)) {
+		// 		this.partners = data;
+		// 	} else {
+		// 		console.error("O retorno não é um array:", data);
+		// 	}
+		// });
 	}
 
 	fetchParceiros(): void {

@@ -9,8 +9,7 @@
 
 .titulo {
     grid-row: 1; /* Definindo a primeira linha para o título */
-    color: #02CEDF;
-    font-family: var(--main-titulo-text);
+    color: var(--verde-claro);
     font-weight: 600;
     font-size: 1.6rem;
     text-align: center;
@@ -23,7 +22,7 @@
 .item {
     display: flex;
     align-items: center;
-    margin: 10px 25px 10px 120px;
+    margin: 10px 25px 83px 120px;
 }
 
 .circulo {
@@ -48,6 +47,7 @@
 .circulo:hover {
     filter: grayscale(0%);
 }
+
 
 .image-inside-circle {
     width: 100%;
@@ -83,6 +83,12 @@
     background-color: #B1E239;
 }
 
+.container-info.active {
+    background-color: #B1E239;
+    transform: translateX(0);
+}
+
+
 .nome-parceiro {
     color: #000;
     margin: 0 30px 0 90px;
@@ -92,9 +98,8 @@
 .texto {
     color: #000;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 30px 0 90px;
+    justify-content: start;
+    margin: 0 30px 0 200px;
     font-style: italic;
     font-size: 0.8rem;
 }
