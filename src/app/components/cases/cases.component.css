@@ -1,12 +1,11 @@
 .container-cases {
-    background: #B1E239;
+    background: var(--preto);
     height: 100%;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 30% 70%;
     grid-template-areas:    "titulo"
                             "cases";
-    color: var(--main-text-color);
 }
 
 .titulo {
@@ -16,13 +15,15 @@
     align-items: center;
     font-size: 1.6rem;
     font-weight: 600;
-    font-family: var(--main-titulo-text);
+    font-family: var(--font-semiBold);
+    color: var(--verde-claro);
     padding-top: 30px;
 }
 
 .linha {
     grid-area: cases;
     margin-left: 95px;
+    width: 110%;
 }
 
 .cases {
@@ -43,7 +44,7 @@
 
 .linha-case {
     width: 100px;
-    border-bottom: 3px solid #015C54; 
+    border-bottom: 3px solid var(--cinza-claro); 
     transform: rotate(45deg);
     margin-top: 20px;
 }
@@ -52,13 +53,20 @@
     width: 120px;
     height: 120px;
     flex-shrink: 0;
-    background-color: #b1e239;
-    border: 1px solid #015C54;
     border-radius: 50%;
     overflow: hidden;
     position: relative; 
+    transition: box-shadow 0.3s ease-in-out;
+    filter: grayscale(100%);
 }
 
+
+.circulo:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+    border: 2px solid var(--verde-claro);
+
+}
 
 
 .linha-circulo {
@@ -76,18 +84,19 @@
 
 .texto  {
     margin-top: 17px;
-    width: 80%;
+    width: 350px;
     text-align: center;
     font-size: 0.8rem;
     font-weight: 500;
     line-height: 1.2;
-    font-family: var(--main-titulo-text);
+    font-family: var(--font-regular);
+    color: var(--branco);
 }
 
 .retangulo {
     height: 100px;
     width: 200px;
-    background-color: #B1E239;
+    background-color: var(--preto);
     margin-top: -20px;
     margin-left: 110px;
     z-index: 1;
@@ -126,6 +135,16 @@
         font-weight: 600;
     }
 
+    #cases {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto {
+        width: 300px;
+    }
+
     .cases {
         flex-direction: column;
         gap: 50px;
@@ -141,3 +160,5 @@
         display: none;
     }
 }
+
+

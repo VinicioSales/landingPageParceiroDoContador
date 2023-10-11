@@ -4,36 +4,47 @@
 		(closeModal)="closeModal()"
 		[tipoSolucao]="tipoSolucao"
 	></app-modal-solucoes>
-	<section id="solucoes">
-		<div class="titulo-solucoes">SOLUÇÕES</div>
-	</section>
+	<section id="solucoes"></section>
 	<div class="container-carrossel">
 		<ngb-carousel>
 			<ng-template ngbSlide *ngFor="let solucao of solucoes">
 				<div class="carrossel">
 					<div class="container-solucao">
-						<div class="titulo-solucao">
+						<div
+							class="titulo-solucao"
+							[ngStyle]="{'color': solucao.buttonColor}"
+							>
 							{{ solucao.tituloSolucao }}
 						</div>
 						<div class="midias">
 							<img
 								class="midia"
+								id="midia1"
 								src="{{ solucao.imagem1 }}"
 								alt=""
 							/>
 							<img
 								class="midia"
+								id="midia2"
 								src="{{ solucao.imagem2 }}"
 								alt=""
 							/>
 						</div>
 						<div class="descricao">{{ solucao.descricao }}</div>
-						<div class="botao">
-							<app-botao
-								[texto]="'Saiba mais'"
-								(click)="openModal(solucao.tituloSolucao)"
-							></app-botao>
-						</div>
+						<button class="botao"
+							[ngStyle]="{
+								'background-color': solucao.buttonColor,
+								'box-shadow': hovered ? '0 0 15px ' + solucao.buttonColor : 'none',
+								'color': solucao.buttonColor,
+							}"
+							(mouseover)="hovered = true"
+							(mouseout)="hovered = false"
+							(click)="openModal(solucao.tituloSolucao)"
+							>
+							<div class="textoBotao">
+								Saiba mais
+							</div>
+						</button>
 					</div>
 				</div>
 			</ng-template>

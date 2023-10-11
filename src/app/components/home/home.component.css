@@ -37,58 +37,66 @@
     }
 }
 
-
-
 .home-container {
     height: 603px;
-    background: #B1E239;
+    background: linear-gradient(#202020, #282828) var(--preto);
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.centro {
+    margin-top: 150px;
+    margin-left: 163px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
 }
 
 .frase-home {
     font-size: 2.77rem;
-    font-weight: 700;
-    color: var(--main-text-color);
-    font-family: var(--main-titulo-text);
-    margin-top: 150px;
-    margin-left: 163px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: var(--font-regular);
+    line-height: 97%;
+    letter-spacing: 4.25px;
+    color: var(--verde-claro);
+    margin-top: 90px;
     animation: slideFromRightHardFx 1s ;
 }
 
-.container-titulo {
+.botao {
+    width: 225px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: var(--laranja);
+    color: var(--branco);
+    font-family: var(--font-semiBold);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.botao:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.container-logo {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding-bottom: 30px;
-}
-
-.titulo {
-    font-size: 5rem;
-    font-weight: 700;
-    color: var(--main-text-color);
-    display: flex;
-    justify-content: center;
-    letter-spacing: 8.55px;
-    font-family: var(--main-titulo-text);
-    margin-top: 155px;
-    animation: fadeIn 3s ;
-
-}
-
-.sub-titulo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    letter-spacing: 0.845px;
-    color: var(--main-text-color);
-    animation: fadeIn 4s ;
     
-
 }
+
+.logo {
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 3s ;
+    margin-top: 24px;
+}
+
 
 .linha {
     width: 161px;
@@ -112,24 +120,27 @@
         height: 400px;
     }
 
-    .frase-home {
+    .container-logo {
+        padding-bottom: 0;
+        margin-top: -80px;
+    }
+
+    .centro {
+        margin-left: 30px;
+        align-items: center;
+    }
+
+    .botao {
         display: none;
-        /* font-size: 2.5rem;
-        margin-left: 10px;
-        margin-top: 30px; */
     }
 
-    .titulo {
-        font-size: 3rem;
-        margin-top: 0px;
-        align-items: start;
-        justify-content: center;
-        
+    .frase-home {
+        margin-top: 0;
     }
 
-    .sub-titulo {
-        font-size: 0.6rem;
-        white-space: nowrap;
+    .logo {
+        transform: scale(0.5);
+        margin-top: 0;
     }
 
     .linha {

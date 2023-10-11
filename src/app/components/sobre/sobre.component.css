@@ -8,7 +8,6 @@
 }
 
 .sobre-container {
-    /* background: #015C54; */
     background: #282828;
     height: 792px;
     display: flex;
@@ -16,13 +15,13 @@
     color: #fff;
 }
 
-.icones-missao img {
+.icones {
     width: 83.438px;
     height: 83.438px;
-    flex-shrink: 0;
-    
+    display: flex;
+    justify-self: center;
+    align-self: end;
 }
-
 
 .icone-megafone {
     width: 59px;
@@ -31,26 +30,16 @@
     margin-bottom: 2rem;
 }
 
-.icones-missao {
-    display: flex;
-    align-items: center;
-    margin-left: 235px;
-    gap: 320px;
-    /* margin-bottom: -10px; */
-
-}
-
-#icone-foguete {
-    margin-bottom: 4px;
-}
 
 .grid-sobre {
     width: 100%;
+    padding-left: 50px;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto auto;
     grid-template-areas:    "intro intro intro"
-                            "valores valores valores";
+                            "foguete bandeira maos"
+                            "valores missao visao";
 }
 
 .introducao {
@@ -67,7 +56,7 @@
     text-align: center;
     font-weight: 600;
     font-size: 1.66rem;
-    color: var(--third-text-color);
+    color: var(--amarelo);
     margin-bottom: -50px;
     margin-left: 15px;
 }
@@ -78,20 +67,32 @@
     margin-top: 51px;
 }
 
-.valores-container {
-    width: 100%;
-    grid-area: valores;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 98px;
+#foguete {
+    grid-area: foguete;
+    margin-bottom: 3px;
+    margin-left: 120px;
+
 }
 
+#bandeira {
+    grid-area: bandeira;
+}
+
+#maos {
+    grid-area: maos;
+    margin-bottom: 1px;
+}
+
+
 .linha-superior {
-    width: 80%;
+    grid-row: 2;
+    grid-column: 1 / span 3;
+    width: 95%;
     display: flex;
     align-items: center;
+    align-self: end;
     margin-bottom: -11px;
+    padding-left: 45px;
     animation: slideFromLeftHard 4.5s ;
 
 }
@@ -109,14 +110,30 @@
     margin-left: -5px;
 }
 
-.valores {
+.conteudo-valores,
+.conteudo-missao,
+.conteudo-visao {
     display: flex;
+    justify-content: center;
+    align-items: center;
     align-self: start;
-    width: 80%;
+    max-width: 80%;
 }
 
-.valores-linhas {
+.conteudo-valores {
+    grid-area: valores;
+    display: flex;
+    justify-self: center;
     margin-left: 30px;
+}
+
+.conteudo-missao {
+    grid-area: missao;
+}
+
+.conteudo-visao {
+    grid-area: visao;
+
 }
 
 .coluna {
@@ -133,8 +150,10 @@
     opacity: 100%;
 }
 
-.linha-valores {
+.linha {
     margin-bottom: 90px;
+    flex-shrink: 0;
+    
 }
 
 h2 {
@@ -144,47 +163,83 @@ h2 {
     margin-bottom: 1rem;
 }
 
-.bola-separadora {
-    display: none;
-}
 
 @media screen and (max-width: 820px) {
-    .sobre-container {
-        height: 130%;
-        margin-bottom: -5px;
-    }
-
-    .texto-introducao {
-        width: 80%;
-        font-size: 0.8rem;
-    }
-
-    .valores {
-        display: flex;
-        flex-direction: column;
-        font-size: 0.8rem;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .valores-linhas,
-    .linha-valores,
-    .linha-superior {
+    .linha-superior,
+    .linha {
         display: none;
     }
 
-    .coluna {
-        width: 80%;
+    .sobre-container {
+        height: 140%;
     }
 
-    .bola-separadora {
-        display: block;
-        margin-top: 30px;
+    .grid-sobre {
+        padding-left: 0;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas:    "intro"
+                                "foguete"
+                                "valores"
+                                "bandeira"
+                                "missao"
+                                "maos"
+                                "visao";
     }
 
-    .valores-container {
-        flex-direction: row;
+    #foguete {
+        grid-area: foguete;
         margin-left: 0;
     }
 
+    #bandeira {
+        grid-area: bandeira;
+    }
+
+    #maos {
+        grid-area: maos;
+    }
+
+
+    .conteudo-valores {
+        margin: 0;
+    }
+
+    
+    .introducao {
+        margin: 30px;
+    }
+
+    .titulo {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .texto-introducao {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .coluna {
+        padding: 0;
+        max-width: 50%;
+    }
+
+    .conteudo-missao,
+    .conteudo-valores,
+    .conteudo-visao {
+        align-self: center;
+        max-width: 100%;
+    }
+
+    .icones {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 2164px) {
+    #bandeira,
+    #maos {
+        margin-right: 70px;
+    }
 }
