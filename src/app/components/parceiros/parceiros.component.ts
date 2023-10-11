@@ -9,6 +9,8 @@ import { PartnersService } from "src/app/services/partners/partners.service";
 	styleUrls: ["./parceiros.component.css"],
 })
 export class ParceirosComponent implements OnInit {
+	//FIXME - DESCOMENTAR API E REMOVER TESTES
+	//FIXME - ADICIONAR isTransformActive NA API
 	// partners: any = [];
 	partners: any = [
 		{empresa: "PARCEIRO", isTransformActive: false, media: "assets/img/Ícones - Versão Laranja-03.png", descricao: "shaushaushaushaushaushaushaush ahs uahsau ahu hsau hua"},
