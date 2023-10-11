@@ -1,12 +1,10 @@
 .container-contato {
     height: 100%;
-    background-color: #0D0D0D;
-    color: var(--third-text-color);
+    background: var(--preto);
     display: flex;
     flex-direction: column;
     padding-left: 90px;
     padding-right: 90px;
-    font-family: var(--main-titulo-text);
     justify-content: center;
     align-items: center;
 }
@@ -20,6 +18,8 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+    color: var(--branco);
+    font-family: var(--font-light);
 }
 
 .conteudo {
@@ -34,6 +34,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: var(--branco);
 }
 
 .coluna:hover {
@@ -49,6 +50,7 @@
 
 .info {
     font-size: 0.72rem;
+    font-family: var(--font-light);
 }
 
 @media screen and (max-width: 820px) {
