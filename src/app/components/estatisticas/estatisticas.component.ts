@@ -8,28 +8,40 @@ import { BACK_URL } from "src/app/config"
 	styleUrls: ["./estatisticas.component.css"],
 })
 export class EstatisticasComponent implements OnInit {
-	// estatisticas: any;
+	estatisticas: any;
 
 	
-	estatisticas =  {
-			nome: "70% de produtividade",
-			descricao: "descricao",
-			media: "assets/img/celular-1.png"
-	}
+	// estatisticas =  [
+	// 	{
+	// 		nome: "70% de produtividade",
+	// 		descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+	// 		media: "assets/img/celular-1.png"
+
+	// 	},
+	// 	{	
+	// 		nome: "sasasa",
+	// 		descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+	// 		media: "assets/img/celular-1.png"
+
+	// 	},
+	// ]
 	constructor(private http: HttpClient) {}
 
+	
+
+	
 	ngOnInit(): void {
-		// this.fetchStatistics();
+		this.fetchStatistics();
 	}
 
-	// fetchStatistics(): void {
-	// 	this.http.get(`${BACK_URL}/statistics`).subscribe(
-	// 		(data: any) => {
-	// 			this.estatisticas = data[0];
-	// 		},
-	// 		(error) => {
-	// 			console.error("Erro ao buscar estatísticas:", error);
-	// 		}
-	// 	);
-	// }
+	fetchStatistics(): void {
+		this.http.get(`${BACK_URL}/statistics`).subscribe(
+			(data: any) => {
+				this.estatisticas = data[0];
+			},
+			(error) => {
+				console.error("Erro ao buscar estatísticas:", error);
+			}
+		);
+	}
 }
