@@ -6,6 +6,8 @@
 - Atualizando estatisticas
 - Finalizado cases
 - Finalizado formulario
+- Finalizado parceiros
+- Finalizado contato
 
 ---
 
