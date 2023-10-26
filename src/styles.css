@@ -42,12 +42,13 @@ html, body {
     height: 100%;
     overflow-x: hidden;
     font-size: 18px;
+    
 }
 
 body {
     margin: 0;
     font-family: 'Blinker-SemiBold';
-
+    background-color: var(--preto);
 }
 
 
