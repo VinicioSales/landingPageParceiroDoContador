@@ -39,14 +39,14 @@
 
 .home-container {
     height: 603px;
-    background: linear-gradient(#202020, #282828) var(--preto);
+    /* background: linear-gradient(#202020, #282828) var(--preto); */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .centro {
-    margin-top: 150px;
+    margin-top: -150px;
     margin-left: 163px;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,6 @@
     line-height: 97%;
     letter-spacing: 4.25px;
     color: var(--verde-claro);
-    margin-top: 90px;
     animation: slideFromRightHardFx 1s ;
 }
 

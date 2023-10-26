@@ -11,7 +11,7 @@
             
         </div>
         <div class="objetos">
-            <div class="circulo" (mouseover)="activateTransform(parceiro)">
+            <div class="circulo" (mouseover)="activateTransform(parceiro)" [class.active]="parceiro.isTransformActive">
                 <img
                     [src]= parceiro.media
                     alt="Foto do cliente"

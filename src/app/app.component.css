@@ -1,0 +1,16 @@
+.full-background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background-image: url('src/assets/img/background1.png'), url('src/assets/img/marcasembgconecontornopreto-1.png'), url('src/assets/img/background3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top, center top, center 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 110px;
+}

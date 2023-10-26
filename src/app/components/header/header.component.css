@@ -14,11 +14,11 @@
     width: 100%;
     height: 51px;
     font-size: 0.88rem;
-    font-weight: 600;
     letter-spacing: 1.04px;
     position: fixed;
     background-color: var(--branco);
     z-index: 1001;;
+    font-family: var(--font-regular);
 }
 
 .header-scrolled {
@@ -46,6 +46,10 @@
     align-items: center;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 .nav-left {
     display: flex;
     gap: 45px;  
@@ -56,12 +60,17 @@
 .nav-right {
     display: flex;
     margin-right: 92px;
-    gap: 45px;
+    gap: 20px;
     align-items: center;
+    color: var(--preto);
 }
 
 a {
     color: var(--cinza-claro);
+}
+
+a:hover {
+    font-family: var(--font-semiBold);
 }
 
 .header-mobile-container {

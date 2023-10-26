@@ -1,17 +1,15 @@
 .container-parceiros {
     width: 100%;
-    background: var(--preto);
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto; /* Definindo como auto para permitir que o grid ajuste dinamicamente o número de linhas */
-    padding: 70px 0 70px 0;
 }
 
 .titulo {
     grid-row: 1; /* Definindo a primeira linha para o título */
     color: var(--verde-claro);
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-align: center;
     display: flex;
     justify-self: center;
@@ -45,7 +43,11 @@
     margin: 20px 0px 20px 0px;
 }
 
-.objetos:hover + .info .container-info {
+.circulo.active {
+    filter: grayscale(0%);
+}
+
+.objetos:hover + .info .container-info, .container-info.active {
     background-color: #B1E239;
     transform: translateX(0);
 }
@@ -113,5 +115,57 @@
 
 
 @media screen and (max-width: 820px) {
+    .linha {
+        display: none;
+    }
+    .container-info {
+        /* transform: none; */
+        transition: none;
+        background: transparent;
+        justify-self: center;
+        align-self: center;
+        border: 1px solid #B1E239;
+        border-radius: 10px;
+        margin: 0px 20px 0px 20px;
+        height: 100%;
+        transform: translateX(0);
+    }
+
+    .objetos:hover + .info .container-info, .container-info.active {
+        background: transparent;
+    }
+
+    .container-info:not(.active) {
+        transform: translateX(-150%); /* Se não tiver a classe .active, será ocultado */
+    }
+
+    .titulo {
+        display: flex;
+        align-items: end;
+    }
+
+    .item {
+
+        margin: 70px 0px 10px 0px;
+        flex-direction: column;
+    }
+
+    .nome-parceiro {
+        color: var(--branco);
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto {
+        color: var(--branco);
+        margin: 0px 10px 0px 10px;
+    }
+
+    .info {
+        margin: 0;
+
+    }
 
 }

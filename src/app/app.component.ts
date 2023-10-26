@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   //NOTE - ngOnInit
   ngOnInit() {
     this.documentHeight = this.getDocumentHeight();
-    const alturaUsb = this.documentHeight - 300;
+    const alturaUsb = this.documentHeight + 1100;
     console.log(this.documentHeight);
     const linePrincipalElem = this.el.nativeElement.querySelector('.linha-principal');
     this.renderer.setStyle(linePrincipalElem, 'height', `${alturaUsb}px`);

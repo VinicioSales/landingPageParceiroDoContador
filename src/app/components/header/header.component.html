@@ -1,24 +1,28 @@
 <div class="header-container" [class.header-scrolled]="isScrolled">
 	<div class="esquerda">
 		<div class="logo">
-			<!-- Logo vai aqui, pode ser uma imagem ou texto -->
 			<img
 				class="logo"
 				src="assets/img/marcasembgconepreenchidopreto-1.png"
 				alt="Logo da Parceiro"
+				(click)="scrollToHome()"
 			/>
 		</div>
 
 		<nav class="nav-left">
 			<a href="#">Já sou cliente</a>
-			<a href="#">Conheça nosso ERP</a>
+			<a href="https://www.omie.com.br/unidades-franqueadas/?=omie-ba-unidade-salvador" target="_blank">Precisa de um ERP?</a>
 		</nav>
 	</div>
 	<div class="direita">
 		<nav class="nav-right">
 			<a href="#" (click)="scrollToSection('sobre')">Sobre</a>
 			<a href="#" (click)="scrollToSection('solucoes')">Soluções</a>
-			<a href="#">Store</a>
+			<a href="#" (click)="scrollToSection('cases')">Cases</a>
+			<a href="#" (click)="scrollToSection('estatisticas')">Estatisticas</a>
+			<a href="#" (click)="scrollToSection('parceiros')">Parceiros</a>
+			<a href="#" (click)="scrollToSection('contato')">Contato</a>
+			<a href="https://parceirodocontador.com.br/store" target="_blank">Store</a>
 		</nav>
 	</div>
 </div>

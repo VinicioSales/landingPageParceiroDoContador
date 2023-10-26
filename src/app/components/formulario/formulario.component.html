@@ -1,66 +1,141 @@
 <div class="container-formulario">
-    <div class="left-frame">
-        <div class="texto">
-            Não encontrou o que queria?
-            Fale conosco e criaremos uma solução personalizada para você
-        </div>
-        <div class="seta">
-            <svg id="seta1" xmlns="http://www.w3.org/2000/svg" width="77" height="139" viewBox="0 0 77 139" fill="none" style="position: absolute; top: 0; left: 0;">
-                <path d="M1.99991 1.48293L75.3256 137.781" stroke="#333" stroke-width="3"/>
-            </svg>
-    
-            <svg id="seta2" xmlns="http://www.w3.org/2000/svg" width="704" height="24" viewBox="75.3256 0 704 24" fill="none" style="position: absolute; top: 115px; left: 77px;">
-                <path d="M703.061 13.0607C703.646 12.4749 703.646 11.5251 703.061 10.9393L693.515 1.3934C692.929 0.807611 691.979 0.807611 691.393 1.3934C690.808 1.97919 690.808 2.92893 691.393 3.51472L699.879 12L691.393 20.4853C690.808 21.0711 690.808 22.0208 691.393 22.6066C691.979 23.1924 692.929 23.1924 693.515 22.6066L703.061 13.0607ZM0 13.5H702V10.5H0V13.5Z" fill="#333"/>
-            </svg>
-        </div>
-    </div>
-    <div class="right-frame">
-        <div class="container-robo">
-            <div class="linhas">
-                <div 
-                    [ngClass]="{
-                        'linha-1': true,
-                        'glow': linha1Glow
-                    }">
-                </div>
-                <div 
-                    [ngClass]="{
-                        'linha-2': true,
-                        'glow': linha2Glow
-                    }">
-                </div>
-                <div 
-                    [ngClass]="{
-                        'linha-3': true,
-                        'glow': linha3Glow
-                    }">
-                </div>
-            </div>
-            
-            
-            
-            <img class="robo" src="assets/img/cones-verso-laranja-171.png" alt="">
-        </div>
-        <div class="form-container">
-            <form [formGroup]="form" (ngSubmit)="onSubmit()">
-                <div *ngIf="form.get('nome')?.hasError('hasNumber') && form.get('nome')?.touched" class="error-message">Formato do Nome inválido</div>
-                
-                <input  type="text" placeholder="Nome" formControlName="nome" />
-            
-                <input  type="text" placeholder="Empresa" formControlName="empresa" />
-            
-                <div *ngIf="form.get('email')?.hasError('email') && form.get('email')?.touched" class="error-message">Formato do E-mail inválido</div>
-                <input  type="email" placeholder="E-mail" formControlName="email" />
-            
-                <div *ngIf="form.get('telefone')?.hasError('invalidPhone') && form.get('telefone')?.touched" class="error-message">Formato do Telefone inválido</div>
-                <input  type="tel" placeholder="Telefone - (99) 9 9999-9999" formControlName="telefone" />
-            
-                <textarea id="textarea" placeholder="Descrição da solução" formControlName="descricao"></textarea>
-            
-                <button class="container-botao" type="submit" [disabled]="!form.valid">ENVIAR</button>
-            </form>
-            
-            
-        </div>
-    </div>
+	<div class="left-frame">
+		<div class="texto">
+			Não encontrou o que queria? Fale conosco e criaremos uma solução
+			personalizada para você
+		</div>
+		<div class="seta">
+			<svg
+				id="seta1"
+				xmlns="http://www.w3.org/2000/svg"
+				width="77"
+				height="139"
+				viewBox="0 0 77 139"
+				fill="none"
+				style="position: absolute; top: 0; left: 0"
+			>
+				<path
+					d="M1.99991 1.48293L75.3256 137.781"
+					stroke="#333"
+					stroke-width="3"
+				/>
+			</svg>
+
+			<svg
+				id="seta2"
+				xmlns="http://www.w3.org/2000/svg"
+				width="704"
+				height="24"
+				viewBox="75.3256 0 704 24"
+				fill="none"
+				style="position: absolute; top: 115px; left: 77px"
+			>
+				<path
+					d="M703.061 13.0607C703.646 12.4749 703.646 11.5251 703.061 10.9393L693.515 1.3934C692.929 0.807611 691.979 0.807611 691.393 1.3934C690.808 1.97919 690.808 2.92893 691.393 3.51472L699.879 12L691.393 20.4853C690.808 21.0711 690.808 22.0208 691.393 22.6066C691.979 23.1924 692.929 23.1924 693.515 22.6066L703.061 13.0607ZM0 13.5H702V10.5H0V13.5Z"
+					fill="#333"
+				/>
+			</svg>
+		</div>
+	</div>
+	<div class="right-frame">
+		<div class="container-robo">
+			<div class="linhas">
+				<div
+					[ngClass]="{
+						'linha-1': true,
+						glow: linha1Glow
+					}"
+				></div>
+				<div
+					[ngClass]="{
+						'linha-2': true,
+						glow: linha2Glow
+					}"
+				></div>
+				<div
+					[ngClass]="{
+						'linha-3': true,
+						glow: linha3Glow
+					}"
+				></div>
+			</div>
+
+			<img
+				class="robo"
+				src="assets/img/cones-verso-laranja-171.png"
+				alt=""
+			/>
+		</div>
+		<div class="form-container">
+			<form [formGroup]="form" (ngSubmit)="onSubmit()">
+				<div
+					*ngIf="
+						form.get('nome')?.hasError('hasNumber') &&
+						form.get('nome')?.touched
+					"
+					class="error-message"
+				>
+					Formato do Nome inválido
+				</div>
+
+				<input type="text" placeholder="Nome" formControlName="nome" />
+
+				<input
+					type="text"
+					placeholder="Empresa"
+					formControlName="empresa"
+				/>
+
+				<div
+					*ngIf="
+						form.get('email')?.hasError('email') &&
+						form.get('email')?.touched
+					"
+					class="error-message"
+				>
+					Formato do E-mail inválido
+				</div>
+				<input
+					type="email"
+					placeholder="E-mail"
+					formControlName="email"
+				/>
+
+				<div
+					*ngIf="
+						form.get('telefone')?.hasError('invalidPhone') &&
+						form.get('telefone')?.touched
+					"
+					class="error-message"
+				>
+					Formato do Telefone inválido
+				</div>
+				<input
+					type="tel"
+					placeholder="Telefone - (99) 9 9999-9999"
+					formControlName="telefone"
+				/>
+
+				<textarea
+					id="textarea"
+					placeholder="Descrição da solução"
+					formControlName="descricao"
+				></textarea>
+				<div
+					*ngIf="feedbackMessage"
+					[class.feedback-success]="feedbackType === 'success'"
+					[class.feedback-error]="feedbackType === 'error'"
+				>
+					{{ feedbackMessage }}
+				</div>
+
+				<button
+					class="container-botao"
+					type="submit"
+				>
+					ENVIAR
+				</button>
+			</form>
+		</div>
+	</div>
 </div>

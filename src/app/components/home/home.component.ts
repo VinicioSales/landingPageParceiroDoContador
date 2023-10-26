@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,11 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  constructor(@Inject(DOCUMENT) private document: Document) {}
 
+  scrollToForms(): void {
+    const formsSection = this.document.getElementById('formulario');
+    formsSection?.scrollIntoView({ behavior: 'smooth' })
+  }
 
 }

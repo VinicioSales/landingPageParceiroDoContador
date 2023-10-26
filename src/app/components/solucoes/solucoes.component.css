@@ -1,11 +1,11 @@
 .container-solucoes {
-    background: var(--preto);
     height: 100%;
     color: var(--branco);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: -100px;
 }
 
 .container-solucao {
@@ -126,7 +126,7 @@
 }
 
 ::ng-deep .carousel-indicators {
-    margin-bottom: 95px;
+    margin-bottom: -10px;
 }
 
 .modal {
@@ -174,13 +174,13 @@
 
 @keyframes glowAnimation {
     0% {
-        box-shadow: 10px 0 25px currentColor;
+        box-shadow: 10px 0 25px -4px currentColor;
     }
     50% {
-        box-shadow: 1px 0 25px currentColor;
+        box-shadow: 1px 0 25px -4px currentColor;
     }
     100% {
-        box-shadow: 10px 0 25px currentColor;
+        box-shadow: 10px 0 25px -4px currentColor;
     }
 }
 

@@ -1,4 +1,7 @@
-import { Component, HostListener } from "@angular/core";
+import { Component, HostListener, Inject } from "@angular/core";
+import { DOCUMENT } from '@angular/common';
+
+
 
 @Component({
 	selector: "app-header",
@@ -7,6 +10,8 @@ import { Component, HostListener } from "@angular/core";
 })
 export class HeaderComponent {
 	isScrolled = false;
+
+	constructor(@Inject(DOCUMENT) private document: Document) {}
 
 	@HostListener("window:scroll", [])
 	onWindowScroll() {
@@ -33,6 +38,13 @@ export class HeaderComponent {
 				block: "start",
 				inline: "nearest",
 			});
+
+			
 		}
+	}
+
+	scrollToHome(): void {
+		const homeSection = this.document.getElementById('home');
+		homeSection?.scrollIntoView({ behavior: 'smooth' })
 	}
 }

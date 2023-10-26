@@ -11,16 +11,16 @@ import { PartnersService } from "src/app/services/partners/partners.service";
 export class ParceirosComponent implements OnInit {
 	//FIXME - DESCOMENTAR API E REMOVER TESTES
 	//FIXME - ADICIONAR isTransformActive NA API
-	// partners: any = [];
-	partners: any = [
-		{empresa: "PARCEIRO", isTransformActive: false, media: "assets/img/Ícones - Versão Laranja-03.png", descricao: "shaushaushaushaushaushaushaush ahs uahsau ahu hsau hua"},
-		{empresa: "PARCEIRO", isTransformActive: false, media: "assets/img/Ícones - Versão Laranja-03.png", descricao: "shaushaushaushaushaushaushaush ahs uahsau ahu hsau hua"},
-		{empresa: "PARCEIRO", isTransformActive: false, media: "assets/img/Ícones - Versão Laranja-03.png", descricao: "shaushaushaushaushaushaushaush ahs uahsau ahu hsau hua"},
-	]
+	partners: any = [];
+	// partners: any = [
+	// 	{empresa: "PARCEIRO", isTransformActive: false, media: "assets/img/Ícones - Versão Laranja-03.png", descricao: "shaushaushaushaushaushaushaush ahs uahsau ahu hsau hua"},
+	// 	{empresa: "PARCEIRO", isTransformActive: false, media: "assets/img/Ícones - Versão Laranja-03.png", descricao: "shaushaushaushaushaushaushaush ahs uahsau ahu hsau hua"},
+	// 	{empresa: "PARCEIRO", isTransformActive: false, media: "assets/img/Ícones - Versão Laranja-03.png", descricao: "shaushaushaushaushaushaushaush ahs uahsau ahu hsau hua"},
+	// ]
 	isTransformActive = false;
     
     activateTransform(parceiro: any) {
-		parceiro.isTransformActive = true;
+		parceiro.isTransformActive = !parceiro.isTransformActive;
 	}
 	
 	constructor(
@@ -29,13 +29,13 @@ export class ParceirosComponent implements OnInit {
 	) {}
 
 	ngOnInit(): void {
-		// this.partnersService.getPartners().subscribe((data) => {
-		// 	if (Array.isArray(data)) {
-		// 		this.partners = data;
-		// 	} else {
-		// 		console.error("O retorno não é um array:", data);
-		// 	}
-		// });
+		this.partnersService.getPartners().subscribe((data) => {
+			if (Array.isArray(data)) {
+				this.partners = data;
+			} else {
+				console.error("O retorno não é um array:", data);
+			}
+		});
 	}
 
 	fetchParceiros(): void {

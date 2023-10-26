@@ -8,11 +8,11 @@
 }
 
 .sobre-container {
-    background: #282828;
     height: 792px;
     display: flex;
     justify-content: center;
     color: #fff;
+    margin-top: -250px;
 }
 
 .icones {
@@ -157,7 +157,7 @@
 }
 
 h2 {
-    color: var(--third-text-color);
+    color: var(--amarelo);
     opacity: 80%;
     font-weight: 600;
     margin-bottom: 1rem;

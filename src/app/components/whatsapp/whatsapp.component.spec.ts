@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Botao2Component } from './botao2.component';
+import { WhatsappComponent } from './whatsapp.component';
 
-describe('Botao2Component', () => {
-  let component: Botao2Component;
-  let fixture: ComponentFixture<Botao2Component>;
+describe('WhatsappComponent', () => {
+  let component: WhatsappComponent;
+  let fixture: ComponentFixture<WhatsappComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [Botao2Component]
+      declarations: [WhatsappComponent]
     });
-    fixture = TestBed.createComponent(Botao2Component);
+    fixture = TestBed.createComponent(WhatsappComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,27 +1,27 @@
 <div class="container-contato">
     <div class="titulo">Entre em contato conosco</div>
     <div class="conteudo">
-        <div class="coluna">
+        <div class="coluna" (click)="abrirWhatsapp()">
             <img src="assets/img/celular-1.png" alt="">
             <div class="sub-titulo">Telefone</div>
-            <div class="info">(00) 0 0000-0000</div>
+            <div class="info">(71) 9 8892-8500</div>
         </div>
         <div class="seta">
             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="205" viewBox="0 0 8 205" fill="none">
             <path d="M4.35354 0.781219C4.15828 0.585953 3.8417 0.585953 3.64644 0.781219L0.464457 3.9632C0.269195 4.15846 0.269195 4.47504 0.464457 4.6703C0.65972 4.86555 0.976302 4.86555 1.17156 4.6703L3.99999 1.84187L6.82842 4.6703C7.02368 4.86555 7.34026 4.86555 7.53553 4.6703C7.73079 4.47504 7.73079 4.15846 7.53553 3.9632L4.35354 0.781219ZM4.5 204.135L4.49999 1.13477L3.49999 1.13477L3.5 204.135L4.5 204.135Z" fill="#333"/>
         </svg>
         </div>
-        <div class="coluna">
+        <div class="coluna" id="localizacao" (click)="onColunaClick('https://www.google.com/maps/place/Edif%C3%ADcio+empresarial+Orlando+gomes/@-12.9810735,-38.4539802,15z/data=!4m6!3m5!1s0x7161bfd487e3871:0xfba047d3e27b54eb!8m2!3d-12.9810735!4d-38.4539802!16s%2Fg%2F11j01twx5q?entry=ttu')">
             <img src="assets/img/localizacao-1.png" alt="">
             <div class="sub-titulo">Endereço</div>
-            <div class="info">Lorem ipsum dolor sit amet, 123</div>
+            <div class="info">R. Frederico Simões, 153 - Caminho das Árvores, Salvador - BA, 41820-774</div>
         </div>
         <div class="seta">
             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="205" viewBox="0 0 8 205" fill="none">
                 <path d="M4.35354 0.781219C4.15828 0.585953 3.8417 0.585953 3.64644 0.781219L0.464457 3.9632C0.269195 4.15846 0.269195 4.47504 0.464457 4.6703C0.65972 4.86555 0.976302 4.86555 1.17156 4.6703L3.99999 1.84187L6.82842 4.6703C7.02368 4.86555 7.34026 4.86555 7.53553 4.6703C7.73079 4.47504 7.73079 4.15846 7.53553 3.9632L4.35354 0.781219ZM4.5 204.135L4.49999 1.13477L3.49999 1.13477L3.5 204.135L4.5 204.135Z" fill="#333"/>
             </svg>
         </div>
-        <div class="coluna">
+        <div class="coluna" (click)="onEmailCLick()">
             <img src="assets/img/email-1.png" alt="">
             <div class="sub-titulo">Email</div>
             <div class="info">parceiro@parceirodocontador.com.br</div>
@@ -31,7 +31,7 @@
                 <path d="M4.35354 0.781219C4.15828 0.585953 3.8417 0.585953 3.64644 0.781219L0.464457 3.9632C0.269195 4.15846 0.269195 4.47504 0.464457 4.6703C0.65972 4.86555 0.976302 4.86555 1.17156 4.6703L3.99999 1.84187L6.82842 4.6703C7.02368 4.86555 7.34026 4.86555 7.53553 4.6703C7.73079 4.47504 7.73079 4.15846 7.53553 3.9632L4.35354 0.781219ZM4.5 204.135L4.49999 1.13477L3.49999 1.13477L3.5 204.135L4.5 204.135Z" fill="#333"/>
             </svg>
         </div>
-        <div class="coluna">
+        <div class="coluna" id="instagram" (click)="onColunaClick('https://instagram.com/parceirosolucoes?igshid=MzRlODBiNWFlZA==')">
             <img src="assets/img/instagram-1.png" alt="">
             <div class="sub-titulo">Instagram</div>
             <div class="info">@parceirodocontador</div>

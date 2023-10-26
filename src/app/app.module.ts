@@ -17,11 +17,11 @@ import { NgbModule, NgbCarouselModule } from "@ng-bootstrap/ng-bootstrap";
 import { SolucoesComponent } from "./components/solucoes/solucoes.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { FormularioComponent } from "./components/formulario/formulario.component";
-import { ModalSolucoesComponent } from "./components/modal-solucoes/modal-solucoes.component";
 import { CasesComponent } from "./components/cases/cases.component";
 import { EstatisticasComponent } from "./components/estatisticas/estatisticas.component";
 import { ParceirosComponent } from "./components/parceiros/parceiros.component";
 import { ContatoComponent } from "./components/contato/contato.component";
+import { WhatsappComponent } from './components/whatsapp/whatsapp.component';
 
 @NgModule({
 	declarations: [
@@ -32,13 +32,13 @@ import { ContatoComponent } from "./components/contato/contato.component";
 		SobreComponent,
 		SolucoesComponent,
 		BotaoComponent,
-		ModalSolucoesComponent,
 		Botao2Component,
 		FormularioComponent,
 		CasesComponent,
 		EstatisticasComponent,
 		ParceirosComponent,
 		ContatoComponent,
+  WhatsappComponent,
 	],
 	imports: [
 		BrowserModule,
